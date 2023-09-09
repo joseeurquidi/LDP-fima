@@ -1,0 +1,870 @@
+
+/*--------------------------------------------------------------
+# General
+--------------------------------------------------------------*/
+body {
+  font-family: "Open Sans", sans-serif;
+  color: #444444;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Jost", sans-serif;
+}
+
+.main-color{
+  color: #feca0d;
+}
+
+a {
+  color: #feca0d;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #ffe897;
+  text-decoration: none;
+}
+
+.small-title{
+  position: relative;
+  display: inline-block;
+  font-size: 18px;
+  line-height: 26px;
+  font-weight: 600;
+  color: #716868;
+  padding-bottom: 4px;
+}
+.small-title::before{
+  position: absolute;
+  content: '';
+  width: 100%;
+  height: 2px;
+  left: 0px;
+  bottom: 0px;
+  background: #feca0d;
+}
+
+.small-title.white{
+  color: rgba(255,255,255,0.6);
+}
+
+.text-semi-white{
+  color: rgba(255,255,255,0.6);
+}
+
+.title-section{
+  font-size: 50px;
+  line-height: 60px;
+  font-weight: 900;
+}
+
+h2.style{
+  font-size: 40px;
+  line-height: 45px;
+  font-weight: 900;
+  margin-bottom: 32px
+}
+
+h3.style{
+  font-size: 26px;
+  line-height: 36px;
+  font-weight: 900;
+}
+
+h4.style{
+  font-size: 20px;
+  line-height: 30px;
+  font-weight: 700;
+}
+
+.font-size-50px{
+  font-size: 50px !important;
+}
+/* HEader */
+
+.page-header{
+  position: fixed;
+  top: 0px;
+  background: transparent;
+  transition: all 0.5s;
+  height: 90px;
+  z-index: 10;
+  width: 100%;
+}
+
+.page-header.scrolled{
+  background-color: rgba(0, 0, 0, 0.6);
+}
+
+.page-header .logo{
+  max-height: 60px;
+}
+
+.page-header .container-links{
+  display: flex;
+  align-items: center;
+  justify-content: end;
+  gap: 40px;
+}
+
+.page-header .header-link{
+  color: white;
+}
+
+.page-header .header-link:hover{
+  color: #ffe897;
+}
+
+.page-header .header-link.active{
+  color: #feca0d;
+}
+
+.page-header .header-link.active:hover{
+  color: #feca0d;
+}
+
+.page-header .header-close{
+  position: absolute;
+  right: 30px;
+  top: 40px;
+  font-size: 2rem;
+}
+
+#hover-interactive-header{
+  transition: all 0.3s;
+  position: fixed;
+  top: 0px;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(25, 25, 25, 0.95);
+}
+
+#hover-interactive-header.active{
+  left: 0px;
+}
+
+
+@media (max-width: 992px) {
+  .logo-container{
+    text-align: center;
+    position: relative;
+  }
+
+  .menu{
+    color: white;
+    position: absolute;
+    right: 0px;
+    top: 18px;
+    border-radius: 8px;
+    font-size: 2rem;
+  }
+
+  .page-header .container-links{
+    background-color: rgba(25, 25, 25);
+    flex-flow: column;
+    gap: 12px;
+    align-items: start;
+    padding: 23px;
+    position: fixed;
+    width: 181px;
+    left: -181px;
+    height: 100%;
+    justify-content: start;
+    padding-top: 120px;
+    /* transition: all 0.5s; */
+  }
+
+  .page-header .container-links.active{
+    left: 0px;
+  }
+}
+
+.header-dropdown{
+  border-radius: 0px;
+  background-color: #221d1d;
+}
+
+.header-dropdown .container-header-dropdown{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+  flex-flow: column;
+}
+
+@media (max-width: 992px) {
+  .header-dropdown .container-header-dropdown{
+    color: white;
+    padding-left: 1rem;
+    background-image: linear-gradient(#fff, #fff);
+    background-size: 2px 100%;
+    background-repeat: no-repeat;
+    background-position: 2px 0px;
+  }
+}
+/* inicio */
+
+.hero{
+  background-image: url(../img/inicio/abstract-burning-bright-smoke-black-background.jpg);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.hero-add{
+  padding: 100px 0px;
+}
+
+.hero .logo{
+  max-width: 700px;
+  padding-top: 7rem;
+  padding-bottom: 7rem;
+  height: auto;
+}
+
+@media (max-width: 992px) {
+  .hero .logo{
+    max-width: 100%;
+  }
+}
+
+.wrapper-hero-text{
+  display: flex;
+  align-items: start;
+  justify-content: center;
+  flex-flow: column;
+  margin: 5rem 0px;
+}
+
+@media (max-width: 992px) {
+  .wrapper-hero-text{
+    align-items: center;
+    text-align: center;
+    order: 2;
+  }
+}
+
+.wrapper-hero-img{
+  display: flex;
+  align-items: start;
+  justify-content: center;
+  flex-flow: column;
+  margin: 5rem 0px;
+}
+
+@media (max-width: 992px) {
+  .wrapper-hero-img{
+    margin: 0px;
+    align-items: center;
+    order: 1;
+  }
+}
+
+.hero-btn{
+  background-color: #feca0d;
+  color: white !important;
+  position: relative;
+  display: inline-block;
+}
+
+
+.hero-btn::before{
+  position: absolute;
+  content: '';
+  width: 0%;
+  height: 100%;
+  background: #2d2727;
+  left: 0px;
+  top: 0px;
+  transition: all 500ms ease;
+}
+
+.hero-btn:hover::before {
+  width: 100%;
+}
+
+.logo-2{
+  max-width: 340px;
+  height: auto;
+}
+
+@media (max-width: 992px) {
+  
+  .logo-2{
+    max-width: 200px;
+  }
+}
+
+/* Acerca */
+.wrapper-img-nosotros{
+  padding: 0px 40px 50px 0px;
+}
+
+.wrapper-img-nosotros::before{
+  content: "";
+  position: absolute;
+  background: #f5f0f0;
+  width: calc(100% + 0px);
+  height: calc(100% - 60px);
+  top: 60px;
+  left: -60px;
+  z-index: -1;
+}
+
+
+
+.info-img-nosotros{
+  position: absolute;
+  background-color: #feca0d;
+  color: white;
+  bottom: 0px;
+  left: -60px;
+  text-align: center;
+  padding: 30px 50px 30px;
+  max-width: 200px;
+}
+
+@media (max-width: 1400px) {
+  .wrapper-img-nosotros::before{
+    left: -30px;
+  }
+
+  .info-img-nosotros{
+    left: -30px;
+  }
+}
+
+@media (max-width: 1200px) {
+  .wrapper-img-nosotros::before{
+    left: -20px;
+    height: calc(100% - 130px);
+  }
+
+  .info-img-nosotros{
+    left: -20px;
+    bottom: 70px;
+  }
+}
+
+@media (max-width: 992px) {
+  .wrapper-img-nosotros{
+    text-align: center;
+  }
+  .wrapper-img-nosotros::before{
+    left: -20px;
+    height: calc(100% - 110px);
+  }
+
+  .info-img-nosotros{
+    left: -20px;
+    bottom: 50px;
+  }
+}
+
+@media (max-width: 768px) {
+  .wrapper-img-nosotros{
+    padding-right: 0px;
+  }
+  .wrapper-img-nosotros::before{
+    left: -5px;
+    height: calc(100% - 110px);
+  }
+
+  .info-img-nosotros{
+    left: -5px;
+    bottom: 50px;
+  }
+}
+
+@media (max-width: 576px) {
+  .info-img-nosotros{
+    padding: 20px;
+  }
+}
+
+.icon-text-nosotros{
+  font-size: 60px;
+  line-height: 50px;
+  color: #feca0d;
+}
+
+i.checks-nosotros{
+  font-size: 22px;
+}
+
+/* Valores */
+.values{
+  background-color: #f5f0f0;
+  margin-top: 5rem;
+  padding: 115px 0px 120px 0px;
+}
+
+.container-value{
+  background-image: url(https://placehold.co/600x600);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 400px;
+  position: relative;
+}
+.cc-value{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  height: 100%;
+}
+
+.content-value{
+  position: absolute;
+  top: 15px;
+  left: 0px;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 2;
+  padding: 30px 30px;
+  transition: all 500ms ease;
+  flex-flow: column;
+  color: white;
+  opacity: 0;
+}
+.container-value:hover .cc-value::after{
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  height: 100%;
+  content: "";
+  background: rgba(0, 0,0, 0.6);
+}
+.container-value:hover .content-value{
+  top: 0px;
+  opacity: 1;
+}
+
+
+/* certificados */
+
+.certificados{
+  background-color: #2d2727;
+}
+.cert-text{
+  padding: 115px 60px 120px 60px
+}
+
+
+.cert-text-box{
+  max-width: 660px;
+  margin-left: auto;
+}
+
+@media (max-width: 992px) {
+  .cert-text-box{
+    max-width: unset;
+  } 
+}
+.progress-box{
+  position: relative;
+}
+
+.progress-box .indicator{
+  position: absolute;
+  top: -5px;
+  left: -30px;
+  color: white;
+  font-size: 30px;
+}
+.progress-box .bar{
+  position: relative;
+  width: 100%;
+  height: 8px;
+  background: rgba(255,255,255,0.1);
+  border-radius: 0px;
+  margin-bottom: 12px;
+}
+
+.progress-box .bar .bar-inner{
+  position: relative;
+  display: block;
+  width: 0px;
+  height: 8px;
+  -webkit-transition: all 1500ms ease;
+  -ms-transition: all 1500ms ease;
+  -o-transition: all 1500ms ease;
+  -moz-transition: all 1500ms ease;
+  transition: all 1500ms ease;
+  background: #feca0d;
+}
+
+.img-cert{
+  background-image: url(https://placehold.co/800x1200);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 100%;
+  transition: all .5s;
+}
+
+@media (max-width: 992px) {
+  .img-cert{
+    height: 600px;
+  }
+}
+
+/* Servicios */
+.servicios{
+  background-color: #f5f0f0;
+  padding: 115px 0px 120px 0px;
+}
+
+.service-box{
+  position: relative;
+  display: block;
+  background: #fff;
+  padding: 52px 15px 45px 15px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.02);
+  text-align: center;
+  height: 100%;
+}
+
+.service-box::before{
+  position: absolute;
+  content: '';
+  width: 100%;
+  height: 0%;
+  left: 0px;
+  top: 0px;
+  transition: all 500ms ease;
+  background: #feca0d;
+}
+
+.service-box:hover{
+  color: white;
+}
+
+.service-box:hover i{
+  color: white;
+}
+
+
+.service-box:hover::before{
+  height: 100%;
+}
+
+.service-box i{
+  position: relative;
+  display: inline-block;
+  font-size: 65px;
+  line-height: 60px;
+  color: #2d2727;
+  margin-bottom: 15px;
+  transition: all 500ms ease;
+}
+
+.service-box h4{
+  position: relative;
+  display: block;
+  font-size: 20px;
+  line-height: 24px;
+  font-weight: 700;
+  transition: all 500ms ease;
+}
+
+/* diseños */
+.diseños{
+  padding: 115px 0px 120px 0px;
+}
+
+.disign-box{
+  background-color: #f5f0f0;
+  padding: 2rem 3rem;
+  margin-bottom: 0.5rem;
+}
+
+.icon-design-box{
+  width: 78px;
+  height: 78px;
+  line-height: 78px;
+  text-align: center;
+  border-radius: 50%;
+  font-size: 50px;
+  color: #fff;
+  background: #feca0d;
+}
+
+.icon-text-box{
+  display: flex;
+  align-items: center;
+  justify-content: start;
+}
+
+/* proyectos */
+.proyectos{
+  padding: 115px 0px 120px 0px;
+}
+
+.proyect-image-box{
+  width: 100%;
+  height: 400px;
+  position: relative;
+  overflow: hidden;
+}
+
+.proyect-image{
+  background-image: url(https://placehold.co/600x600);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 100%;
+  transition: all .5s;
+}
+
+.proyect-image-box:hover .proyect-image,
+.proyect-image-box:focus .proyect-image{
+  transform: scale(1.2);
+}
+
+.proyect-image-box::after{
+  position: absolute;
+  content: '';
+  width: 100%;
+  height: 0%;
+  left: 0px;
+  top: 0px;
+  transition: all 500ms ease;
+  background: #feca0d;
+  color: white;
+  opacity: 0.9;
+}
+
+.proyect-image-box:hover::after{
+  height: 100%;
+}
+
+.proyect-image-link{
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%,-50%) scale(0,0);
+  font-size: 60px;
+  line-height: 50px;
+  color: #fff;
+  font-weight: 200;
+  z-index: 1;
+  transition: all 500ms ease;
+  -webkit-transition-delay: 500ms;
+  -moz-transition-delay: 500ms;
+  -ms-transition-delay: 500ms;
+  -o-transition-delay: 500ms;
+  transition-delay: 500ms;
+}
+
+.proyect-image-box:hover .proyect-image-link{
+  transform: translate(-50%,-50%) scale(1,1);
+}
+
+/* extgintores */
+.extintores{
+  background-color: #f5f0f0;
+  padding: 115px 0px 120px 0px;
+}
+
+/* capacitaciones */
+.capacitaciones{
+  padding: 115px 0px 120px 0px;
+}
+
+.capacitacion-img{
+  background-image: url(https://placehold.co/600x600);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 300px;
+  position: relative;
+}
+
+.capacitacion-text{
+  background-color: #f5f0f0;
+  padding: 30px;
+}
+
+.capacitacion-parag{
+  font-size: 16px;
+  line-height: 32px;
+  font-weight: 600;
+}
+
+.capaciacion-link{
+  position: relative;
+  display: inline-block;
+  width: 48px;
+  height: 48px;
+  line-height: 48px;
+  background: #fff;
+  border-radius: 50%;
+  text-align: center;
+  font-size: 24px;
+  color: #2d2727;
+  transition: all 500ms ease;
+  -moz-transition: all 500ms ease;
+  -webkit-transition: all 500ms ease;
+  -ms-transition: all 500ms ease;
+  -o-transition: all 500ms ease;
+}
+
+.capaciacion-link:hover{
+  background: #feca0d;
+  color: white;
+}
+
+/* clientes */
+.clientes{
+  background-color: #f5f0f0;
+  padding: 115px 0px 120px 0px;
+}
+
+/* contacto */
+.contacto{
+  padding: 115px 0px 120px 0px;
+}
+
+.contact-icon{
+  width: 60px;
+  height: 60px;
+  line-height: 60px;
+  text-align: center;
+  border-radius: 50%;
+  font-size: 30px;
+  color: #fff;
+  background: #feca0d;
+}
+
+.contact-link{
+  font-weight: 600;
+  transition: all 500ms ease;
+  box-shadow: none;
+  text-decoration: none;
+  color: #716868;
+}
+
+.contact-link:hover{
+  color: #feca0d;
+}
+
+.contact-elements{
+  border-bottom: 1px solid #eee8e8;
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem;
+}
+
+.contact-marker{
+  display: flex;
+  align-items: center;
+}
+
+.contact-info{
+  display: flex;
+  justify-content: center;
+  align-items: start;
+  flex-flow: column;
+  gap:5px
+}
+
+.contact-input{
+  position: relative;
+  display: block;
+  width: 100%;
+  height: 70px;
+  background: #f5f0f0;
+  border: 1px solid #f5f0f0;
+  font-size: 16px;
+  color: #706767;
+  font-weight: 600;
+  padding: 10px 20px;
+  transition: all 500ms ease;
+}
+
+.contact-input:focus,
+.contact-input:focus-visible{
+  border-color: #feca0d !important;
+}
+
+.contact-textarea{
+  position: relative;
+  display: block;
+  width: 100%;
+  height: 230px;
+  resize: none;
+  background: #f5f0f0;
+  border: 1px solid #f5f0f0;
+  font-size: 16px;
+  color: #706767;
+  font-weight: 600;
+  padding: 10px 20px;
+  transition: all 500ms ease;
+}
+
+.contact-textarea:focus{
+  border-color: #feca0d !important;
+}
+
+.mapa{
+  position: relative;
+  width: 100%;
+  height: 550px;
+}
+
+/* footer */
+.footer{
+  background-color: #221d1d;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  color: #fff;
+}
+
+.font-weight-bold{
+  font-weight: bold;
+}
+/*--------------------------------------------------------------
+# Back to top button
+--------------------------------------------------------------*/
+.back-to-top {
+  position: fixed;
+  visibility: hidden;
+  opacity: 0;
+  right: 15px;
+  bottom: 15px;
+  z-index: 996;
+  background: #feca0d;
+  width: 40px;
+  height: 40px;
+  border-radius: 50px;
+  transition: all 0.4s;
+}
+
+.back-to-top i {
+  font-size: 24px;
+  color: #fff;
+  line-height: 0;
+}
+
+.back-to-top:hover {
+  background: #6bc1e9;
+  color: #fff;
+}
+
+.back-to-top.active {
+  visibility: visible;
+  opacity: 1;
+}
