@@ -168,6 +168,10 @@ h4.style{
   background-color: #c12020;
 }
 
+.page-header .header-link.active.nosotros::after{
+  width: 75px;
+}
+
 .page-header .header-link.active:hover{
   color: #FFF;
   font-weight: bold;
@@ -1008,4 +1012,84 @@ i.checks-nosotros{
 
 .desc-quick-proccess{
   background-color: #24272e;
+}
+
+.about-title{
+  background-color: #c12020;
+  padding: 150px 0px 120px 0px;
+}
+
+.back-title{
+  color: white;
+  opacity: 0.1;
+  font-size: 160px;
+  text-transform: uppercase;
+}
+
+.upper-title{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  font-size: 80px;
+  text-transform: uppercase;
+}
+
+.main-about{
+  background-color: #24272e;
+  padding: 115px 0px 120px 0px;
+}
+
+.container-img-main-about{
+  position: relative;
+}
+
+.container-img-main-about::before{
+  position: absolute;
+  content: "";
+  background-color: transparent;
+  border: 20px solid #c12020;
+  width: calc(100% - 6rem);
+  height: calc(100% - 6rem);
+  left: 0px;
+  top: 0px;
+}
+
+.img-main-about{
+  position: relative;
+  z-index: 1;
+  max-width: 100%;
+  height: auto;
+}
+
+.container-buttons-main-about{
+  display: flex;
+  gap: 40px;
+}
+
+.main-procesos1{
+  background-color: #24272e;
+  padding: 30px 0px 0px 0px;
+}
+
+.main-procesos2{
+  background-color: #c12020;
+  padding: 0px 0px 120px 0px;
+}
+
+
+.desc-main-proccess{
+  background-color: #24272e;
+}
+
+.values-title{
+  color: white;
+  text-decoration: underline 4px #c12020;
+  text-underline-offset: 8px;
+}
+
+.policy-list{
+  color: white;
+  list-style-type: disclosure-closed;
 }
