@@ -77,26 +77,24 @@ $('.owl-carousel').owlCarousel({
   loop: true,
   margin: 10,
   nav: true,
+  dots: false,
+  navText : ['<i class="fa fa-angle-left" aria-hidden="true"></i>','<i class="fa fa-angle-right" aria-hidden="true"></i>'],
   responsive: {
     0: {
       items: 1
     },
-    600: {
-      items: 3
-    },
-    1000: {
-      items: 5
-    }
   }
 })
 
+
 loadHeadbarProccess()
+setPositionTransparentBackground()
 window.addEventListener("resize", (event) => {
   loadHeadbarProccess()
+  setPositionTransparentBackground()
 });
 
 function loadHeadbarProccess(){
-  console.log("sda")
   let procesos_toggle = document.getElementById("procesos-toggle")
   let list_proccess = document.getElementById("list-proccess")
   let wwidth = window.innerWidth
@@ -130,3 +128,14 @@ document.addEventListener('scroll', () => {
     }
   }
 });
+
+function setPositionTransparentBackground(){
+  let main_image = document.getElementById("main-image")
+  let second_title = document.getElementsByClassName("second-title")
+
+
+  for( let i = 0; i < second_title.length; i++){
+    second_title[i].style.backgroundSize = `${main_image.offsetWidth }px ${main_image.offsetHeight }px `
+    second_title[i].style.backgroundPosition = `-${ second_title[i].offsetLeft }px -${second_title[i].offsetTop}px`
+  }
+}

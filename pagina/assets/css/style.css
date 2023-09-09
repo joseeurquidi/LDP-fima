@@ -3,7 +3,7 @@
 # General
 --------------------------------------------------------------*/
 body {
-  font-family: "Open Sans", sans-serif;
+  font-family: "Poppins", sans-serif;
   color: #444444;
 }
 
@@ -13,20 +13,28 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: "Jost", sans-serif;
+  font-family: "Anton", sans-serif;
 }
 
 .main-color{
-  color: #feca0d;
+  color: #c12020;
+}
+
+.main-background{
+  background-color: #c12020;
+}
+
+.sec-color{
+  color: #24272e;
 }
 
 a {
-  color: #feca0d;
+  color: #c12020;
   text-decoration: none;
 }
 
 a:hover {
-  color: #ffe897;
+  color: #ff8686;
   text-decoration: none;
 }
 
@@ -46,7 +54,7 @@ a:hover {
   height: 2px;
   left: 0px;
   bottom: 0px;
-  background: #feca0d;
+  background: #c12020;
 }
 
 .small-title.white{
@@ -85,6 +93,30 @@ h4.style{
 .font-size-50px{
   font-size: 50px !important;
 }
+
+.owl-theme .owl-nav {
+  margin: 0px !important
+}
+
+.font-40px{
+  font-size: 40px;
+}
+.font-60px{
+  font-size: 60px;
+}
+
+.line-height-60px{
+  line-height: 60px;
+}
+
+.font-80px{
+  font-size: 80px;
+}
+
+.line-height-80px{
+  line-height: 80px;
+}
+
 /* HEader */
 
 .page-header{
@@ -117,15 +149,28 @@ h4.style{
 }
 
 .page-header .header-link:hover{
-  color: #ffe897;
+  color: #ff9292;
 }
 
 .page-header .header-link.active{
-  color: #feca0d;
+  color: #FFF;
+  font-weight: bold;
+  position: relative;
+}
+
+.page-header .header-link.active::after{
+  content: "";
+  position: absolute;
+  bottom: -5px;
+  left: 0px;
+  width: 42px;
+  height: 3px;
+  background-color: #c12020;
 }
 
 .page-header .header-link.active:hover{
-  color: #feca0d;
+  color: #FFF;
+  font-weight: bold;
 }
 
 .page-header .header-close{
@@ -210,6 +255,51 @@ h4.style{
 }
 /* inicio */
 
+.owl-prev, .owl-next {
+  width: 60px;
+  height: 60px;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  display: block !important;
+  border:0px solid black;
+  background-color: rgba(255, 255, 255, 0.2) !important;
+  transition: all 0.3s ease;
+}
+.owl-prev:hover, .owl-next:hover{
+  background-color: white !important;
+  color: black !important;
+}
+.owl-prev { left: 20px; }
+.owl-next { right: 20px; }
+
+.title-carousel{
+  position: absolute;
+  top: 0px;
+  width: 100%;
+  height: 100%;
+  left: 0px;
+}
+
+.title-carousel .big-title{
+  font-size: 80px;
+  color: #c12020;
+}
+
+.title-carousel .second-title{
+  font-size: 100px;
+  text-transform: uppercase;
+  background-image: url(https://placehold.co/2000x1000);
+  
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  -webkit-background-clip: text;
+  display: block;
+  /* background-position: -656px -280px; */
+  background-repeat: no-repeat;
+  /* background-size: 1276px 850px; */
+}
+
 .hero{
   background-image: url(../img/inicio/abstract-burning-bright-smoke-black-background.jpg);
   background-position: center center;
@@ -267,10 +357,11 @@ h4.style{
 }
 
 .hero-btn{
-  background-color: #feca0d;
+  background-color: #c12020;
   color: white !important;
   position: relative;
   display: inline-block;
+  cursor: pointer;
 }
 
 
@@ -321,7 +412,7 @@ h4.style{
 
 .info-img-nosotros{
   position: absolute;
-  background-color: #feca0d;
+  background-color: #c12020;
   color: white;
   bottom: 0px;
   left: -60px;
@@ -391,7 +482,7 @@ h4.style{
 .icon-text-nosotros{
   font-size: 60px;
   line-height: 50px;
-  color: #feca0d;
+  color: #c12020;
 }
 
 i.checks-nosotros{
@@ -502,7 +593,7 @@ i.checks-nosotros{
   -o-transition: all 1500ms ease;
   -moz-transition: all 1500ms ease;
   transition: all 1500ms ease;
-  background: #feca0d;
+  background: #c12020;
 }
 
 .img-cert{
@@ -545,7 +636,7 @@ i.checks-nosotros{
   left: 0px;
   top: 0px;
   transition: all 500ms ease;
-  background: #feca0d;
+  background: #c12020;
 }
 
 .service-box:hover{
@@ -599,7 +690,7 @@ i.checks-nosotros{
   border-radius: 50%;
   font-size: 50px;
   color: #fff;
-  background: #feca0d;
+  background: #c12020;
 }
 
 .icon-text-box{
@@ -643,7 +734,7 @@ i.checks-nosotros{
   left: 0px;
   top: 0px;
   transition: all 500ms ease;
-  background: #feca0d;
+  background: #c12020;
   color: white;
   opacity: 0.9;
 }
@@ -724,7 +815,7 @@ i.checks-nosotros{
 }
 
 .capaciacion-link:hover{
-  background: #feca0d;
+  background: #c12020;
   color: white;
 }
 
@@ -747,7 +838,7 @@ i.checks-nosotros{
   border-radius: 50%;
   font-size: 30px;
   color: #fff;
-  background: #feca0d;
+  background: #c12020;
 }
 
 .contact-link{
@@ -759,7 +850,7 @@ i.checks-nosotros{
 }
 
 .contact-link:hover{
-  color: #feca0d;
+  color: #c12020;
 }
 
 .contact-elements{
@@ -797,7 +888,7 @@ i.checks-nosotros{
 
 .contact-input:focus,
 .contact-input:focus-visible{
-  border-color: #feca0d !important;
+  border-color: #c12020 !important;
 }
 
 .contact-textarea{
@@ -816,7 +907,7 @@ i.checks-nosotros{
 }
 
 .contact-textarea:focus{
-  border-color: #feca0d !important;
+  border-color: #c12020 !important;
 }
 
 .mapa{
@@ -827,7 +918,7 @@ i.checks-nosotros{
 
 /* footer */
 .footer{
-  background-color: #221d1d;
+  background-color: #24272e;
   padding-top: 30px;
   padding-bottom: 30px;
   color: #fff;
@@ -846,7 +937,7 @@ i.checks-nosotros{
   right: 15px;
   bottom: 15px;
   z-index: 996;
-  background: #feca0d;
+  background: #c12020;
   width: 40px;
   height: 40px;
   border-radius: 50px;
@@ -867,4 +958,54 @@ i.checks-nosotros{
 .back-to-top.active {
   visibility: visible;
   opacity: 1;
+}
+
+.quick-about{
+  background-color: #24272e;
+  padding: 115px 0px 120px 0px;
+}
+
+.container-img-quick-about{
+  position: relative;
+}
+
+.container-img-quick-about::before{
+  position: absolute;
+  content: "";
+  background-color: transparent;
+  border: 20px solid #c12020;
+  width: calc(100% - 6rem);
+  height: calc(100% - 6rem);
+  right: 0px;
+  top: 0px;
+}
+
+.img-quick-about{
+  position: relative;
+  z-index: 1;
+  max-width: 100%;
+  height: auto;
+}
+
+.container-buttons-quick-about{
+  display: flex;
+  gap: 40px;
+}
+
+.quick-procesos1{
+  background-color: #24272e;
+  padding: 30px 0px 0px 0px;
+}
+
+.quick-procesos2{
+  background-color: #c12020;
+  padding: 0px 0px 120px 0px;
+}
+
+.uppercase{
+  text-transform: uppercase;
+}
+
+.desc-quick-proccess{
+  background-color: #24272e;
 }
