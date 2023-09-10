@@ -28,6 +28,10 @@ h6 {
   color: #24272e;
 }
 
+.text-justify{
+  text-align: justify;
+}
+
 a {
   color: #c12020;
   text-decoration: none;
@@ -170,6 +174,10 @@ h4.style{
 
 .page-header .header-link.active.nosotros::after{
   width: 75px;
+}
+
+.page-header .header-link.active.planta::after{
+  width: 55px;
 }
 
 .page-header .header-link.active:hover{
