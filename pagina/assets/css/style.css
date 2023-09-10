@@ -24,6 +24,15 @@ h6 {
   background-color: #c12020;
 }
 
+.main-border{
+  border-color: #c12020;
+}
+
+.white-link{
+  color: white;
+  text-decoration: underline dotted 2px white;
+}
+
 .sec-color{
   color: #24272e;
 }
@@ -183,6 +192,11 @@ h4.style{
 .page-header .header-link.active.procesos::after{
   width: 75px;
 }
+
+.page-header .header-link.active.contact::after{
+  width: 80px;
+}
+
 
 .page-header .header-link.active:hover{
   color: #FFF;
@@ -992,7 +1006,7 @@ i.checks-nosotros{
 
 /* footer */
 .footer{
-  background-color: #24272e;
+  background-color: #1d1f25;
   padding-top: 30px;
   padding-bottom: 30px;
   color: #fff;
@@ -1108,6 +1122,36 @@ i.checks-nosotros{
   text-transform: uppercase;
 }
 
+@media (max-width: 1400px) {
+  .back-title{
+    font-size: 160px;
+  }
+}
+
+@media (max-width: 1200px) {
+  .back-title{
+    font-size: 120px;
+  }
+}
+
+@media (max-width: 992px) {
+  .back-title{
+    font-size: 100px;
+  }
+}
+
+@media (max-width: 768px) {
+  .back-title{
+    font-size: 80px;
+  }
+}
+
+@media (max-width: 576px) {
+  .back-title{
+    font-size: 60px;
+  }
+}
+
 .upper-title{
   position: absolute;
   top: 50%;
@@ -1116,6 +1160,37 @@ i.checks-nosotros{
   color: white;
   font-size: 80px;
   text-transform: uppercase;
+  width: 100%;
+}
+
+@media (max-width: 1400px) {
+  .upper-title{
+    font-size: 80px;
+  }
+}
+
+@media (max-width: 1200px) {
+  .upper-title{
+    font-size: 70px;
+  }
+}
+
+@media (max-width: 992px) {
+  .upper-title{
+    font-size: 60px;
+  }
+}
+
+@media (max-width: 768px) {
+  .upper-title{
+    font-size: 50px;
+  }
+}
+
+@media (max-width: 576px) {
+  .upper-title{
+    font-size: 40px;
+  }
 }
 
 .main-about{
@@ -1195,4 +1270,9 @@ i.checks-nosotros{
 
 .main-proccess .main-proccess-desc{
   background-color: #1d1f25;
+}
+
+.main-contact{
+  background-color: #24272e;
+  padding: 115px 0px 120px 0px;
 }
