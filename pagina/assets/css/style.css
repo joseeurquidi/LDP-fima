@@ -1,3 +1,8 @@
+:root{
+  --main-color: #c12020;
+  --main-background: #24272e;
+  --main-content: #1d1f25;
+}
 
 /*--------------------------------------------------------------
 # General
@@ -17,15 +22,15 @@ h6 {
 }
 
 .main-color{
-  color: #c12020;
+  color: var(--main-color);
 }
 
 .main-background{
-  background-color: #c12020;
+  background-color: var(--main-color);
 }
 
 .main-border{
-  border-color: #c12020;
+  border-color: var(--main-color);
 }
 
 .white-link{
@@ -34,7 +39,7 @@ h6 {
 }
 
 .sec-color{
-  color: #24272e;
+  color: var(--main-background);
 }
 
 .text-justify{
@@ -42,7 +47,7 @@ h6 {
 }
 
 a {
-  color: #c12020;
+  color: var(--main-color);
   text-decoration: none;
 }
 
@@ -67,7 +72,7 @@ a:hover {
   height: 2px;
   left: 0px;
   bottom: 0px;
-  background: #c12020;
+  background: var(--main-color);
 }
 
 .small-title.white{
@@ -178,7 +183,7 @@ h4.style{
   left: 0px;
   width: 42px;
   height: 3px;
-  background-color: #c12020;
+  background-color: var(--main-color);
 }
 
 .page-header .header-link.active.nosotros::after{
@@ -313,7 +318,7 @@ h4.style{
 
 .title-carousel .big-title{
   font-size: 80px;
-  color: #c12020;
+  color: var(--main-color);
 }
 
 @media (max-width: 1400px) {
@@ -445,7 +450,7 @@ h4.style{
 }
 
 .hero-btn{
-  background-color: #c12020;
+  background-color: var(--main-color);
   color: white !important;
   position: relative;
   display: inline-block;
@@ -500,7 +505,7 @@ h4.style{
 
 .info-img-nosotros{
   position: absolute;
-  background-color: #c12020;
+  background-color: var(--main-color);
   color: white;
   bottom: 0px;
   left: -60px;
@@ -570,7 +575,7 @@ h4.style{
 .icon-text-nosotros{
   font-size: 60px;
   line-height: 50px;
-  color: #c12020;
+  color: var(--main-color);
 }
 
 i.checks-nosotros{
@@ -681,7 +686,7 @@ i.checks-nosotros{
   -o-transition: all 1500ms ease;
   -moz-transition: all 1500ms ease;
   transition: all 1500ms ease;
-  background: #c12020;
+  background: var(--main-color);
 }
 
 .img-cert{
@@ -724,7 +729,7 @@ i.checks-nosotros{
   left: 0px;
   top: 0px;
   transition: all 500ms ease;
-  background: #c12020;
+  background: var(--main-color);
 }
 
 .service-box:hover{
@@ -778,7 +783,7 @@ i.checks-nosotros{
   border-radius: 50%;
   font-size: 50px;
   color: #fff;
-  background: #c12020;
+  background: var(--main-color);
 }
 
 .icon-text-box{
@@ -822,7 +827,7 @@ i.checks-nosotros{
   left: 0px;
   top: 0px;
   transition: all 500ms ease;
-  background: #c12020;
+  background: var(--main-color);
   color: white;
   opacity: 0.9;
 }
@@ -903,7 +908,7 @@ i.checks-nosotros{
 }
 
 .capaciacion-link:hover{
-  background: #c12020;
+  background: var(--main-color);
   color: white;
 }
 
@@ -926,7 +931,7 @@ i.checks-nosotros{
   border-radius: 50%;
   font-size: 30px;
   color: #fff;
-  background: #c12020;
+  background: var(--main-color);
 }
 
 .contact-link{
@@ -938,7 +943,7 @@ i.checks-nosotros{
 }
 
 .contact-link:hover{
-  color: #c12020;
+  color: var(--main-color);
 }
 
 .contact-elements{
@@ -976,7 +981,7 @@ i.checks-nosotros{
 
 .contact-input:focus,
 .contact-input:focus-visible{
-  border-color: #c12020 !important;
+  border-color: var(--main-color) !important;
 }
 
 .contact-textarea{
@@ -995,7 +1000,7 @@ i.checks-nosotros{
 }
 
 .contact-textarea:focus{
-  border-color: #c12020 !important;
+  border-color: var(--main-color) !important;
 }
 
 .mapa{
@@ -1006,7 +1011,7 @@ i.checks-nosotros{
 
 /* footer */
 .footer{
-  background-color: #1d1f25;
+  background-color: var(--main-content);
   padding-top: 30px;
   padding-bottom: 30px;
   color: #fff;
@@ -1025,7 +1030,7 @@ i.checks-nosotros{
   right: 15px;
   bottom: 15px;
   z-index: 996;
-  background: #c12020;
+  background: var(--main-color);
   width: 40px;
   height: 40px;
   border-radius: 50px;
@@ -1049,7 +1054,7 @@ i.checks-nosotros{
 }
 
 .quick-about{
-  background-color: #24272e;
+  background-color: var(--main-background);
   padding: 115px 0px 120px 0px;
 }
 
@@ -1061,7 +1066,7 @@ i.checks-nosotros{
   position: absolute;
   content: "";
   background-color: transparent;
-  border: 20px solid #c12020;
+  border: 20px solid var(--main-color);
   width: calc(100% - 6rem);
   height: calc(100% - 6rem);
   right: 0px;
@@ -1093,12 +1098,12 @@ i.checks-nosotros{
 }
 
 .quick-procesos1{
-  background-color: #24272e;
+  background-color: var(--main-background);
   padding: 30px 0px 0px 0px;
 }
 
 .quick-procesos2{
-  background-color: #c12020;
+  background-color: var(--main-color);
   padding: 0px 0px 120px 0px;
 }
 
@@ -1107,11 +1112,11 @@ i.checks-nosotros{
 }
 
 .desc-quick-proccess{
-  background-color: #24272e;
+  background-color: var(--main-background);
 }
 
 .about-title{
-  background-color: #c12020;
+  background-color: var(--main-color);
   padding: 150px 0px 120px 0px;
 }
 
@@ -1194,7 +1199,7 @@ i.checks-nosotros{
 }
 
 .main-about{
-  background-color: #24272e;
+  background-color: var(--main-background);
   padding: 115px 0px 120px 0px;
 }
 
@@ -1206,7 +1211,7 @@ i.checks-nosotros{
   position: absolute;
   content: "";
   background-color: transparent;
-  border: 20px solid #c12020;
+  border: 20px solid var(--main-color);
   width: calc(100% - 6rem);
   height: calc(100% - 6rem);
   left: 0px;
@@ -1238,23 +1243,23 @@ i.checks-nosotros{
 }
 
 .main-procesos1{
-  background-color: #24272e;
+  background-color: var(--main-background);
   padding: 30px 0px 0px 0px;
 }
 
 .main-procesos2{
-  background-color: #c12020;
+  background-color: var(--main-color);
   padding: 0px 0px 120px 0px;
 }
 
 
 .desc-main-proccess{
-  background-color: #24272e;
+  background-color: var(--main-background);
 }
 
 .values-title{
   color: white;
-  text-decoration: underline 4px #c12020;
+  text-decoration: underline 4px var(--main-color);
   text-underline-offset: 8px;
 }
 
@@ -1264,15 +1269,15 @@ i.checks-nosotros{
 }
 
 .main-proccess{
-  background-color: #24272e;
+  background-color: var(--main-background);
   padding: 115px 0px 120px 0px;
 }
 
 .main-proccess .main-proccess-desc{
-  background-color: #1d1f25;
+  background-color: var(--main-content);
 }
 
 .main-contact{
-  background-color: #24272e;
+  background-color: var(--main-background);
   padding: 115px 0px 120px 0px;
 }
