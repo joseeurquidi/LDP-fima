@@ -95,39 +95,49 @@ window.addEventListener("resize", (event) => {
 });
 
 function loadHeadbarProccess(){
-  let procesos_toggle = document.getElementById("procesos-toggle")
-  let list_proccess = document.getElementById("list-proccess")
+  let metal_toggle = document.getElementById("metal-toggle")
+  let list_metal = document.getElementById("list-metal")
+
+  let fiberglass_toggle = document.getElementById("fiberglass-toggle")
+  let list_fibrerglass = document.getElementById("list-fibrerglass")
   let wwidth = window.innerWidth
 
   if (wwidth > 992) {
-    if (!procesos_toggle.classList.contains("isToggling")) {
-      procesos_toggle.classList.add("isToggling")
-      list_proccess.classList.add("dropdown-menu")
+    if (!metal_toggle.classList.contains("isToggling")) {
+      metal_toggle.classList.add("isToggling")
+      list_metal.classList.add("dropdown-menu")
+      fiberglass_toggle.classList.add("isToggling")
+      list_fibrerglass.classList.add("dropdown-menu")
 
-      procesos_toggle.dataset.bsToggle = 'dropdown'
+      metal_toggle.dataset.bsToggle = 'dropdown'
+      fiberglass_toggle.dataset.bsToggle = 'dropdown'
     }
   } else {
-    if (procesos_toggle.classList.contains("isToggling")) {
-      procesos_toggle.classList.remove("isToggling")
-      list_proccess.classList.remove("dropdown-menu")
-      delete procesos_toggle.dataset.bsToggle;
+    if (metal_toggle.classList.contains("isToggling")) {
+      metal_toggle.classList.remove("isToggling")
+      list_metal.classList.remove("dropdown-menu")
+      fiberglass_toggle.classList.remove("isToggling")
+      list_fibrerglass.classList.remove("dropdown-menu")
+
+      delete metal_toggle.dataset.bsToggle;
+      delete fiberglass_toggle.dataset.bsToggle;
     }
   }
 }
 
-document.addEventListener('scroll', () => {
-  let header = document.getElementById("header")
-  let scrollY = window.scrollY
-  if( scrollY == 0 ){
-    if( header.classList.contains("scrolled") ){
-      header.classList.remove("scrolled")
-    }
-  }else{
-    if(!header.classList.contains("scrolled")){
-      header.classList.add("scrolled")
-    }
-  }
-});
+// document.addEventListener('scroll', () => {
+//   let header = document.getElementById("header")
+//   let scrollY = window.scrollY
+//   if( scrollY == 0 ){
+//     if( header.classList.contains("scrolled") ){
+//       header.classList.remove("scrolled")
+//     }
+//   }else{
+//     if(!header.classList.contains("scrolled")){
+//       header.classList.add("scrolled")
+//     }
+//   }
+// });
 
 function setPositionTransparentBackground(){
   let main_image = document.getElementById("main-image")
