@@ -1,5 +1,5 @@
 :root{
-  --main-color:  #F6BE00; /*#c12020;*/
+  --main-color:  #ffc31d; /*#c12020;*/
   --main-background: #24272e;
   --main-content: #1d1f25;
 }
@@ -160,7 +160,7 @@ h4.style{
 
 .header-top a{
   color: white;
-  font-size: 14px;
+  font-size: 12px;
 }
 
 .header-top a:not(:first-child)::before{
