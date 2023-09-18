@@ -1441,6 +1441,10 @@ i.checks-nosotros{
   z-index: 0;
 }
 
+.mini-carrousel-hero-item::before{
+  background: linear-gradient(90deg, rgba(0,0,0,1) 0%, rgba(255,195,29,1) 100%);
+}
+
 .z-1{
   z-index: 1;
 }
@@ -1448,6 +1452,11 @@ i.checks-nosotros{
 .carrousel-container{
   padding-top: 224px;
   padding-bottom: 223px;
+}
+
+.mini-carrousel-container{
+  padding-top: 150px;
+  padding-bottom: 120px;
 }
 
 .hero-title{
