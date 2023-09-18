@@ -137,6 +137,10 @@ h4.style{
   font-size: 16px;
 }
 
+.font-20px{
+  font-size: 20px;
+}
+
 .font-40px{
   font-size: 40px;
 }
@@ -1526,7 +1530,7 @@ i.checks-nosotros{
 }
 
 .quick-services{
-  background-color: #f0f0f0;
+  background-color: #fafafa;
   padding: 115px 0px 120px 0px;
 }
 
@@ -1552,4 +1556,12 @@ i.checks-nosotros{
   background: linear-gradient(90deg, rgba(0,0,0,1) 0%, rgba(255,195,29,1) 100%);
   opacity: 0.3;
   z-index: 0;
+}
+
+.container-products{
+  border-radius: 5px;
+  background-clip: padding-box;
+  background-color: rgba(255,255,255,1);
+  border: 1px solid rgba(206,211,213,1);
+  padding: 2rem;
 }
