@@ -1250,6 +1250,7 @@ i.checks-nosotros{
 }
 
 .about-title{
+  margin-top: 91px;
   background-color: var(--main-color);
   padding: 150px 0px 120px 0px;
 }
@@ -1333,7 +1334,7 @@ i.checks-nosotros{
 }
 
 .main-about{
-  background-color: var(--main-background);
+  background-color: #fafafa;
   padding: 115px 0px 120px 0px;
 }
 
@@ -1392,13 +1393,11 @@ i.checks-nosotros{
 }
 
 .values-title{
-  color: white;
   text-decoration: underline 4px var(--main-color);
   text-underline-offset: 8px;
 }
 
 .policy-list{
-  color: white;
   list-style-type: disclosure-closed;
 }
 
@@ -1524,4 +1523,24 @@ i.checks-nosotros{
 
 .desc-quick-services{
   background-color: #fff;
+}
+
+.hero-subsection{
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+.hero-subsection::before{
+  content: "";
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  width: 100%;
+  height: 100%;
+  /* background-image: linear-gradient(to right, #000000, #222222, #3e3e3e, #5c5c5c, #7c7c7c); */
+  background: linear-gradient(90deg, rgba(0,0,0,1) 0%, rgba(255,195,29,1) 100%);
+  opacity: 0.3;
+  z-index: 0;
 }
