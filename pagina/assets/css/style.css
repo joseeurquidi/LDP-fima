@@ -1562,6 +1562,6 @@ i.checks-nosotros{
   border-radius: 5px;
   background-clip: padding-box;
   background-color: rgba(255,255,255,1);
-  border: 1px solid rgba(206,211,213,1);
+  /* border: 1px solid rgba(206,211,213,1); */
   padding: 2rem;
 }
