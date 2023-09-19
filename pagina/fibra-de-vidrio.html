@@ -5,13 +5,13 @@
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
-  <title>FIMAC Coahuila SA de CV - Fibra de vidrio</title>
+  <title>FIMAC Coahuila SA de CV - Inicio</title>
   <meta content="" name="description">
   <meta content="" name="keywords">
 
   <!-- Favicons -->
-  <link href="assets/img/logos/logo_fimac.png" rel="icon">
-  <link href="assets/img/logos/logo_fimac.png" rel="apple-touch-icon">
+  <link href="assets/img/logos/logo.svg" rel="icon">
+  <link href="assets/img/logos/logo.svg" rel="apple-touch-icon">
 
   <!-- Google Fonts -->
   <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Jost:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i|Anton:400" rel="stylesheet">
@@ -36,7 +36,8 @@
   <!-- Inspiracion -->
   <!-- https://vima.parts/es/ -->
   <!-- https://www.disma.mx/index.html -->
-
+  <!-- https://www.stanser.com/ -->
+  
 </head>
 
 <body>
@@ -45,37 +46,107 @@
   <div id="header" class="page-header">
     <div class="container">
       <div class="row">
-        <div class="col-lg-2 col-12 p-3 logo-container">
-            <img src="assets/img/logos/logo_fimac.png" class="img-fluid logo" alt="" srcset="">
-            <a class="d-lg-none d-block menu" onclick="openMenu()">
-              <i class="bi bi-list"></i>
-            </a>
+        
+        <div class="col-lg-3 col-12 p-3 logo-container">
+          <div class="container-logo">
+            <img src="assets/img/logos/logo.svg" class="img-fluid logo" alt="" srcset="">
+            <h4 class="text-center mb-0 mt-3 text-black">FIMAC COAHUILA</h3>
+          </div>
+            
+          <a class="d-lg-none d-block menu" onclick="openMenu()">
+            <i class="bi bi-list"></i>
+          </a>
         </div>
         <div id="hover-interactive-header"></div>
-        <div id="container-links" class="col-lg-10 col-12 container-links">
-          <a class="header-link" href="index.html">Inicio</a>
-          <a class="header-link nosotros" href="nosotros.html">Nosotros</a>
-          <a class="header-link planta" href="planta.html">Planta</a>
-          <a id="procesos-toggle" class="header-link isToggling active procesos" href="" type="button" data-bs-toggle="dropdown" aria-expanded="false">Procesos</a>
-          <div id="list-proccess" class="dropdown-menu header-dropdown">
-            <div class="container-header-dropdown">
-              <a class="header-link dropdown-item" href="#">Fibra de vidrio</a>
-              <a class="header-link dropdown-item" href="maquinado.html">Maquinado</a>
-              <a class="header-link dropdown-item" href="corte-laser.html">Corte láser</a>
-              <a class="header-link dropdown-item" href="dobles.html">Dobles</a>
-              <a class="header-link dropdown-item" href="soldadura.html">Soldadura</a>
+        <div id="container-links" class="col-lg-9 col-12 header-main-container">
+          <div class="row">
+            <div class="col-12 header-top mt-2">
+              <a href="https://wa.me/8127488530" target="_blank" rel="noopener noreferrer"><i class='bx bxl-whatsapp'></i> 812 748 8530</a></a>
+              <a href="tel:8446577662"><i class='bx bx-phone' ></i> 844 657 7662</a>
+              <a href="mailto:ventas@fimacoahuila.com">ventas@fimacoahuila.com</a>
             </div>
-            
           </div>
-          <a class="header-link" href="contacto.html">Contacto</a>
-          <a class="d-lg-none d-block header-close" onclick="closeMenu()"><i class="bi bi-x"></i></a>
+          <div class="col-12 container-links">
+            <a class="header-link inicio" href="index.html">Inicio</a>
+            <a class="header-link nosotros" href="nosotros.html">Nosotros</a>
+            <a class="header-link metal" href="metal.html">Metal Mecánica</a>
+            <a class="header-link fibra active" href="fibra-de-vidrio.html">Fibra de vidrio</a>
+            <a class="header-link contact" href="contacto.html">Contacto</a>
+            <a class="d-lg-none d-block header-close text-white" onclick="closeMenu()"><i class="bi bi-x"></i></a>
+          </div>
+          
         </div>
 
       </div>
     </div>
   </div>
 
-  <div class="about-title">
+  <div id="carousel" class="hero-carousel">
+    <div class="owl-carousel owl-theme">
+      <div class="item hero-item mini-carrousel-hero-item" style="background-image: url(https://placehold.co/2000x1000.png);">
+        <div class="container z-1 position-relative">
+          <div class="row">
+            <div class="col-6 mini-carrousel-container">
+              <h2 class="text-white">Maquinado</h2>
+              <p class="text-white-50">Contamos con diferentes equipos de alta calidad para cumplir y satisfacer las expectativas</p>
+              <a class="hero-btn px-5 py-3" href="contacto.html">
+                <span class="position-relative">Contacto</span>
+              </a>
+            </div>
+            <div class="col-6"></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="item hero-item mini-carrousel-hero-item" style="background-image: url(https://placehold.co/2000x1000.png);">
+        <div class="container z-1 position-relative">
+          <div class="row">
+            <div class="col-6"></div>
+            <div class="col-6 mini-carrousel-container text-end">
+              <h2 class="text-white">Corte laser de placa y tubular</h2>
+              <p class="text-white-50">Contamos con diferentes equipos de alta calidad para cumplir y satisfacer las expectativas</p>
+              <a class="hero-btn px-5 py-3" href="contacto.html">
+                <span class="position-relative">Contacto</span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="item hero-item mini-carrousel-hero-item" style="background-image: url(https://placehold.co/2000x1000.png);">
+        <div class="container z-1 position-relative">
+          <div class="row">
+            <div class="col-6 mini-carrousel-container">
+              <h2 class="text-white">Dobles</h2>
+              <p class="text-white-50">Contamos con diferentes equipos de alta calidad para cumplir y satisfacer las expectativas</p>
+              <a class="hero-btn px-5 py-3" href="contacto.html">
+                <span class="position-relative">Contacto</span>
+              </a>
+            </div>
+            <div class="col-6"></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="item hero-item mini-carrousel-hero-item" style="background-image: url(https://placehold.co/2000x1000.png);">
+        <div class="container z-1 position-relative">
+          <div class="row">
+            <div class="col-6"></div>
+            <div class="col-6 mini-carrousel-container text-end">
+              <h2 class="text-white">Pailería- Soldadura</h2>
+              <p class="text-white-50">Contamos con diferentes equipos de alta calidad para cumplir y satisfacer las expectativas</p>
+              <a class="hero-btn px-5 py-3" href="contacto.html">
+                <span class="position-relative">Contacto</span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <div class="barra">
     <div class="container">
       <div class="row">
         <div class="col-12 text-center position-relative">
@@ -86,36 +157,176 @@
     </div>
   </div>
 
-  <div class="main-proccess">
+  <div class="quick-services">
     <div class="container">
       <div class="row">
-        <div class="col-2 d-lg-block d-none"></div>
-        <div class="col-lg-8 col-12 px-0">
-          <!-- 3*2 -->
-          <img src="./assets/img/procesos/sfiberglass.jpg" alt="" srcset="" class="img-fluid">
+        <div class="col-12 mb-5">
+          <h2 class="hero-title text-center">Maquinado</h2>
         </div>
-        <div class="col-2 d-lg-block d-none"></div>
-        <div class="col-2 d-lg-block d-none"></div>
-        <div class="col-lg-8 col-12 main-proccess-desc p-5">
-          <h5 class="text-white">FI<span class="main-color">MA</span>C</h5>
-          <h1 class="text-white uppercase">Fibra de vidrio</h1>
-          <p class="text-white">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Debitis necessitatibus nam, fugiat dolorum ex, exercitationem repellat dolore assumenda culpa tempore ducimus accusamus, sint velit saepe. Officiis culpa eum molestias amet?</p>
+      </div>
 
+      <div class="row">
+        <div class="col-md-6 col-12 mb-5 p-5">
+          <div class="container-products">
+            <div class="proyect-image-box">
+              <div class="proyect-image" style="background-image: url(./assets/img/planta/mini/m01.png)"></div>
+              <a class="proyect-image-link" href="./assets/img/planta/01.png" data-lightbox="image-1" data-title="ALMACEN MATERIA PRIMA">
+                <i class="icofont-plus"></i>
+              </a>
+            </div>
+            <h6 class="text-left mt-4 accent-color font-20px">
+              CENTRO DE MAQUINADO VERTICAL HAAS VF-4 <br>
+              AÑO 2021
+            </h6>
+          </div>
+          
         </div>
-        <div class="col-2 d-lg-block d-none"></div>
+
+        <div class="col-md-6 col-12 mb-5 p-5">
+          <div class="container-products">
+            <div class="proyect-image-box">
+              <div class="proyect-image" style="background-image: url(./assets/img/planta/mini/m02.png)"></div>
+              <a class="proyect-image-link" href="./assets/img/planta/02.png" data-lightbox="image-1" data-title="ALMACENES">
+                <i class="icofont-plus"></i>
+              </a>
+            </div>
+            <h6 class="text-left mt-4 accent-color font-20px">
+              CENTRO DE TORNEADO HAAS ST-15 <br>
+              AÑO 2023
+            </h6>
+          </div>
+          
+        </div>
+
+        <div class="col-md-6 col-12 mb-5 p-5">
+          <div class="container-products">
+            <div class="proyect-image-box">
+              <div class="proyect-image" style="background-image: url(./assets/img/planta/mini/m02.png)"></div>
+              <a class="proyect-image-link" href="./assets/img/planta/02.png" data-lightbox="image-1" data-title="ALMACENES">
+                <i class="icofont-plus"></i>
+              </a>
+            </div>
+            <h6 class="text-left mt-4 accent-color font-20px">
+              FRESADORA DE TORRETA VERTICAL UNIVERSAL <br>
+              AÑO 2022
+            </h6>
+
+            <div class="mt-5 mb-4">
+              <a class="hero-btn px-5 py-3" data-bs-toggle="modal" data-bs-target="#fresadoraModal">
+                <span class="position-relative">Detalles</span>
+              </a>
+            </div>
+
+          </div>
+          
+        </div>
+
+        <div class="col-md-6 col-12 mb-5 p-5">
+          <div class="container-products">
+            <div class="proyect-image-box">
+              <div class="proyect-image" style="background-image: url(./assets/img/planta/mini/m02.png)"></div>
+              <a class="proyect-image-link" href="./assets/img/planta/02.png" data-lightbox="image-1" data-title="ALMACENES">
+                <i class="icofont-plus"></i>
+              </a>
+            </div>
+            <h6 class="text-left mt-4 accent-color font-20px">
+              CORTE LASER DOBLE USO SERIE IGR-FT 3,000 WATTS <br>
+              AÑO 2023
+            </h6>
+
+            <div class="mt-5 mb-4">
+              <a class="hero-btn px-5 py-3" data-bs-toggle="modal" data-bs-target="#corteLaserModal">
+                <span class="position-relative">Detalles</span>
+              </a>
+            </div>
+
+          </div>
+          
+        </div>
+
+        <div class="col-md-6 col-12 mb-5 p-5">
+          <div class="container-products">
+            <div class="proyect-image-box">
+              <div class="proyect-image" style="background-image: url(./assets/img/planta/mini/m02.png)"></div>
+              <a class="proyect-image-link" href="./assets/img/planta/02.png" data-lightbox="image-1" data-title="ALMACENES">
+                <i class="icofont-plus"></i>
+              </a>
+            </div>
+            <h6 class="text-left mt-4 accent-color font-20px">
+              DOBLADORA KRAS CNC 110 TON <br>
+              AÑO 2023
+            </h6>
+
+            <div class="mt-5 mb-4">
+              <a class="hero-btn px-5 py-3" data-bs-toggle="modal" data-bs-target="#dobladoraModal">
+                <span class="position-relative">Detalles</span>
+              </a>
+            </div>
+          </div>
+          
+        </div>
+
+        
+        
+      </div>
+    </div>
+
+    <div class="container mt-5">
+      <div class="row">
+        <div class="col-12 mb-5">
+          <h2 class="hero-title text-center">Paileria - Soldadura</h2>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-md-6 col-12 mb-5 p-5">
+          <div class="container-products">
+            <div class="proyect-image-box">
+              <div class="proyect-image" style="background-image: url(./assets/img/planta/mini/m01.png)"></div>
+              <a class="proyect-image-link" href="./assets/img/planta/01.png" data-lightbox="image-1" data-title="ALMACEN MATERIA PRIMA">
+                <i class="icofont-plus"></i>
+              </a>
+            </div>
+            <h6 class="text-left mt-4 accent-color font-20px">
+              SOLDADURA INVERSOR PARA MICROALAMBRE, ELECTRODO Y TIG<br>
+              MODELO AXT-SUPERMIG255<br>
+              AÑO 2022
+            </h6>
+          </div>
+          
+        </div>
+
+        <div class="col-md-6 col-12 mb-5 p-5">
+          <div class="container-products">
+            <div class="proyect-image-box">
+              <div class="proyect-image" style="background-image: url(./assets/img/planta/mini/m02.png)"></div>
+              <a class="proyect-image-link" href="./assets/img/planta/02.png" data-lightbox="image-1" data-title="ALMACENES">
+                <i class="icofont-plus"></i>
+              </a>
+            </div>
+            <h6 class="text-left mt-4 accent-color font-20px">
+              PLASMA BI-VOLTAJE <br>
+              MODELO AXT-P1045CD <br>
+              AÑO 2023
+            </h6>
+          </div>
+          
+        </div>
+        
       </div>
     </div>
   </div>
+
 
 
   <div id="footer" class="footer">
     <div class="container">
       <div class="row">
         <div class="col-lg-8 col-12">
-          © Copyright 2023 <span class="font-weight-bold">FI<span class="main-color">MA</span>C Coahuila SA de CV</span>. Todos los derechos reservados
+          © Copyright 2023 <span class="font-weight-bold">FI<span class="accent-color">MA</span>C Coahuila SA de CV</span>. Todos los derechos reservados
         </div>
   
-        <div class="col-lg-4 col-12 text-lg-end text-start mt-lg-0 mt-3">
+         <div class="col-lg-4 col-12 text-lg-end text-start mt-lg-0 mt-3">
           Diseñado por <a href="http://ldp.mx" target="_blank" rel="noopener noreferrer">LDP</a> 
         </div>
       </div>
@@ -137,8 +348,474 @@
   
 
   <!-- Template Main JS File -->
-  <script src="assets/js/main.js"></script>
+   <script src="assets/js/main.js"></script>
 
 </body>
 
 </html>
+
+<div class="modal modal-lg fade" id="fresadoraModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">
+          FRESADORA DE TORRETA VERTICAL UNIVERSAL <br>
+          AÑO 2022
+        </h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <div class="container">
+          <div class="row">
+            <div class="col-12">
+              <table class="table table-bordered ">
+                <thead>
+                  <tr>
+                    <th colspan="2">
+                      Especificaciones técnicas
+                    </th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>Mesa de trabajo</td>
+                    <td class="text-end">
+                      10" X 50"
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>Viaje Longitudibal</td>
+                    <td class="text-end">
+                      838MM (33")
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>Viaje Transersal</td>
+                    <td class="text-end">
+                      335MM (13 ¼")
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>Viaje Vertical</td>
+                    <td class="text-end">
+                      350MM (13 ¾")
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>Husillo fabricado en Acero SCM 4</td>
+                    <td class="text-end">
+                      R-8
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>Viaje de Husillo</td>
+                    <td class="text-end">
+                      5"
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>Motor l</td>
+                    <td class="text-end">
+                      80 a 5,440 RPM
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>Cabezal de torreta giratorio (izq-der)</td>
+                    <td class="text-end">
+                      a 90º
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>Cabezal de la torreta giratoria (del-atras)</td>
+                    <td class="text-end">
+                      a 45º
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>Peso especifico de la máquina</td>
+                    <td class="text-end">
+                      1,000 KGS
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>Dimensiones de la máquina</td>
+                    <td class="text-end">
+                      65" x 67" x 79"
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>Peso máximo de la pieza de trabajo</td>
+                    <td class="text-end">
+                      320 KGS
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+    </div>
+  </div>
+</div>
+
+
+<div class="modal modal-lg fade" id="corteLaserModal" tabindex="-1"  aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">
+          CORTE LASER DOBLE USO SERIE IGR-FT 3,000 WATTS <br>
+          AÑO 2023
+        </h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <div class="container">
+          <div class="row">
+            <div class="col-12">
+              <table class="table table-bordered ">
+                <thead>
+                  <tr>
+                    <th colspan="3">
+                      Datos técnicos
+                    </th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td colspan="2">Modelo</td>
+                    <td class="text-end">
+                      iGR-FT 3015
+                    </td>
+                  </tr>
+                  <tr>
+                    <td colspan="2">Mesa de trabajo/longitud de tuberia</td>
+                    <td class="text-end">
+                      3050*1530mm/6000mm
+                    </td>
+                  </tr>
+                  <tr>
+                    <td colspan="2">Carrera del eje X</td>
+                    <td class="text-end">
+                      1550mm
+                    </td>
+                  </tr>
+                  <tr>
+                    <td colspan="2">Carrera del eje Y</td>
+                    <td class="text-end">
+                      3100mm
+                    </td>
+                  </tr>
+                  <tr>
+                    <td colspan="2">Carrera del eje Z</td>
+                    <td class="text-end">
+                      315mm
+                    </td>
+                  </tr>
+                  <tr>
+                    <td colspan="2">Diametro de la tuberia</td>
+                    <td class="text-end">
+                      10-240mm
+                    </td>
+                  </tr>
+                  <tr>
+                    <td rowspan="2" class="text-center">
+                      Presición
+                    </td>
+                    <td>
+                      Precisión de posicionamiento
+                    </td>
+                    <td class="text-end">
+                      0.05mm
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      Precisión de reposicionamiento
+                    </td>
+                    <td class="text-end">
+                      0.03mm
+                    </td>
+                  </tr>
+                  <tr>
+                    <td rowspan="5" class="text-center">
+                      Velocidad
+                    </td>
+                    <td>
+                      Ángulo de rotación del eje W
+                    </td>
+                    <td class="text-end">
+                      n*360
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      Velocidad máxima del eje W
+                    </td>
+                    <td class="text-end">
+                      80rpm/min
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      Velocidad máxima del aire del eje
+                    </td>
+                    <td class="text-end">
+                      100m/min
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      Velocidad máxima en vacío del eje
+                    </td>
+                    <td class="text-end">
+                      50m/min
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      Aceleración máxima del eje X, Y
+                    </td>
+                    <td class="text-end">
+                      0.8G
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+    </div>
+  </div>
+</div>
+
+<div class="modal modal-lg fade" id="dobladoraModal" tabindex="-1"  aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">
+          DOBLADORA KRAS CNC 110 TON <br>
+          AÑO 2023
+        </h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <div class="container">
+          <div class="row">
+            <div class="col-12">
+              <h5>Tecnologías</h5>
+              <table class="table table-bordered ">
+                <thead>
+                  <tr>
+                    <th class="text-center">
+                      No
+                    </th>
+                    <th class="text-center">
+                      Nombre
+                    </th>
+                    <th class="text-center">
+                      Unidad
+                    </th>
+                    <th class="text-center">
+                      110T/2500
+                    </th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td class="text-center">
+                      1
+                    </td>
+                    <td>
+                      Presión de flexión
+                    </td>
+                    <td>
+                      KN
+                    </td>
+                    <td>
+                      1100
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class="text-center">
+                      2
+                    </td>
+                    <td>
+                      Longitud de flexión (A)
+                    </td>
+                    <td>
+                      Milimetros
+                    </td>
+                    <td>
+                      2500
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class="text-center">
+                      3
+                    </td>
+                    <td>
+                      Distancia de la columna (B)
+                    </td>
+                    <td>
+                      Milimetros
+                    </td>
+                    <td>
+                      2000
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class="text-center">
+                      4
+                    </td>
+                    <td>
+                      Profundidad de la garganta (C)
+                    </td>
+                    <td>
+                      Milimetros
+                    </td>
+                    <td>
+                      410
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class="text-center">
+                      5
+                    </td>
+                    <td>
+                      Trazo deslizante
+                    </td>
+                    <td>
+                      Milimetros
+                    </td>
+                    <td>
+                      200
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class="text-center">
+                      6
+                    </td>
+                    <td>
+                      Máx. Altura de apertura (F)
+                    </td>
+                    <td>
+                      Milimetros
+                    </td>
+                    <td>
+                      570
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class="text-center">
+                      7
+                    </td>
+                    <td>
+                      Velocidad de descenso del eje Y1, Y2
+                    </td>
+                    <td>
+                      mm/seg
+                    </td>
+                    <td>
+                      220
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class="text-center">
+                      8
+                    </td>
+                    <td>
+                      Eje Y1, Y2 Velocidad de carrera hacia atras
+                    </td>
+                    <td>
+                      mm/seg
+                    </td>
+                    <td>
+                      140
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class="text-center">
+                      9
+                    </td>
+                    <td>
+                      Eje Y1, Y2
+                    </td>
+                    <td>
+                      Mmm
+                    </td>
+                    <td>
+                      0.01
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class="text-center">
+                      10
+                    </td>
+                    <td>
+                      Distancia máxima del eje X
+                    </td>
+                    <td>
+                      Milimetros
+                    </td>
+                    <td>
+                      600
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class="text-center">
+                      11
+                    </td>
+                    <td>
+                      Grado lineal de la pieza de trabajo
+                    </td>
+                    <td>
+                      Mmm
+                    </td>
+                    <td>
+                      ≥ 0.15
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class="text-center">
+                      12
+                    </td>
+                    <td>
+                      Presición de posicionamiento de tope trasero
+                    </td>
+                    <td>
+                      Mmm
+                    </td>
+                    <td>
+                      0.05 mm
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class="text-center">
+                      13
+                    </td>
+                    <td>
+                      Presición repetido del tope trasero<br>
+                      Exactitud
+                    </td>
+                    <td>
+                      Mmm
+                    </td>
+                    <td>
+                      0.01 mm
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+    </div>
+  </div>
+</div>
