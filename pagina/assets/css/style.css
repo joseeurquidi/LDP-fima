@@ -51,6 +51,11 @@ h6 {
   text-decoration: underline dotted 2px white;
 }
 
+.main-link{
+  color: var(--main-color);
+  text-decoration: underline dotted 2px var(--main-color);
+}
+
 .sec-color{
   color: var(--main-background);
 }
@@ -909,6 +914,14 @@ i.checks-nosotros{
   padding: 115px 0px 120px 0px;
 }
 
+.h-100px{
+  height: 100px !important;
+}
+
+.h-200px{
+  height: 200px !important;
+}
+
 .proyect-image-box{
   width: 100%;
   height: 400px;
@@ -1415,7 +1428,7 @@ i.checks-nosotros{
 }
 
 .main-contact{
-  background-color: var(--main-background);
+  background-color: #fafafa;
   padding: 115px 0px 120px 0px;
 }
 
@@ -1564,4 +1577,8 @@ i.checks-nosotros{
   background-color: rgba(255,255,255,1);
   /* border: 1px solid rgba(206,211,213,1); */
   padding: 2rem;
+}
+
+.back-grey{
+  background-color: #f7f8f9;
 }
