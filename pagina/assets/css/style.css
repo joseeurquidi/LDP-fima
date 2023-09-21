@@ -1439,14 +1439,15 @@ i.checks-nosotros{
   margin-top: 91px;
 }
 
-.hero-item{
+.main-hero{
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
   position: relative;
+  min-height: 800px;
 }
 
-.hero-item::before{
+.main-hero::before{
   content: "";
   position: absolute;
   left: 0px;
@@ -1458,8 +1459,48 @@ i.checks-nosotros{
   z-index: 0;
 }
 
+.hero-item{
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  min-height: 600px;
+}
+
+.hero-item::before{
+  content: "";
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  width: 100%;
+  height: 100%;
+  background-color: #000;
+  opacity: 0.6;
+  z-index: 0;
+}
+
 .mini-carrousel-hero-item::before{
-  background: linear-gradient(90deg, rgba(0,0,0,1) 0%, rgba(255,195,29,1) 100%);
+  /* background: linear-gradient(90deg, rgba(0,0,0,1) 0%, rgba(255,195,29,1) 100%); */
+  background: linear-gradient(90deg, rgba(0,0,0,1) 0%, rgb(43 43 43) 100%);
+}
+
+.simple-item{
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+.simple-item::before{
+  content: "";
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  width: 100%;
+  height: 100%;
+  background-color: #000;
+  opacity: 0.5;
+  z-index: 0;
 }
 
 .z-1{
@@ -1469,16 +1510,27 @@ i.checks-nosotros{
 .carrousel-container{
   padding-top: 224px;
   padding-bottom: 223px;
+  padding-left: 50px;
+  padding-right: 50px;
 }
 
 .mini-carrousel-container{
-  padding-top: 150px;
-  padding-bottom: 120px;
+  /* padding-top: 150px;
+  padding-bottom: 120px; */
+  padding-top: 200px;
+  padding-bottom: 150px;
+  padding-left: 50px;
+  padding-right: 50px;
 }
 
 .hero-title{
   font-size: 70px;
   line-height: 80px;
+}
+
+.text-white-75{
+  --bs-text-opacity: 1;
+  color: rgba(255,255,255,.75)!important;
 }
 
 /* Barra */
