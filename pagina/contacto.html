@@ -59,18 +59,23 @@
         <div id="hover-interactive-header"></div>
         <div id="container-links" class="col-xl-7 col-lg-8 col-12 header-main-container">
           <div class="row">
-            <div class="col-12 header-top mt-2">
+            <div class="col-10 header-top mt-2">
               <a href="https://wa.me/8127488530" target="_blank" rel="noopener noreferrer"><i class='bx bxl-whatsapp'></i> 812 748 8530</a></a>
               <a href="tel:8446577662"><i class='bx bx-phone' ></i> 844 657 7662</a>
-              <a href="mailto:ventas@fimacoahuila.com">ventas@fimacoahuila.com</a>
+              <a href="mailto:ventas@fimacoahuila.com"><i class='bx bx-envelope' ></i> ventas@fimacoahuila.com</a>
+            </div>
+            <div class="col-2 mt-2 language-selector">
+              <a href="javascript:;" id="language-button-es" class="language-button" onclick="setLanguage('es')" >Es</a>
+              <div>/</div>
+              <a href="javascript:;" id="language-button-en" class="language-button" onclick="setLanguage('en')" >En</a>
             </div>
           </div>
           <div class="col-12 container-links">
-            <a class="header-link inicio" href="index.html">Inicio</a>
-            <a class="header-link nosotros" href="nosotros.html">Nosotros</a>
-            <a class="header-link metal" href="piezas-metalicas.html">Metal Mecánica</a>
-            <a class="header-link fibra" href="fibra-de-vidrio.html">Fibra de vidrio</a>
-            <a class="header-link contact active" href="contacto.html">Contacto</a>
+            <a data-laguange="active" data-es="Inicio" data-en="Home" class="header-link inicio" href="index.html">Inicio</a>
+            <a data-laguange="active" data-es="Nosotros" data-en="About" class="header-link nosotros" href="nosotros.html">Nosotros</a>
+            <a data-laguange="active" data-es="Metal Mecánica" data-en="Metal Mechanics" class="header-link metal " href="piezas-metalicas.html">Metal Mecánica</a>
+            <a data-laguange="active" data-es="Fibra de vidrio" data-en="Fiberglass" class="header-link fibra " href="fibra-de-vidrio.html">Fibra de vidrio</a>
+            <a data-laguange="active" data-es="Contacto" data-en="Contact" class="header-link contact active" href="contacto.html">Contacto</a>
             <a class="d-lg-none d-block header-close " onclick="closeMenu()"><i class="bi bi-x"></i></a>
           </div>
           
@@ -86,7 +91,10 @@
       <div class="row">
         <div class="col-12 content">
 
-          <h2 class="hero-title text-white mb-5 uppercase">Con<span class="accent-color">ta</span>cto</h2>
+          <h2 class="hero-title text-white mb-5 uppercase"
+          data-laguange="active" 
+          data-es='Con<span class="accent-color">ta</span>cto' 
+          data-en='Con<span class="accent-color">ta</span>ct'></h2>
         </div>
       </div>
     </div>
@@ -102,27 +110,42 @@
         <div class="col-lg-6 col-12">
           <div class="row">
             <div class="col-12">
-              <h5 class="main-color uppercase">Agente de Ventas</h5>
+              <h5 class="main-color uppercase"
+              data-laguange="active" 
+              data-es='Agente de Ventas' 
+              data-en='Sales Agent'></h5>
               <p>Roberto Diaz</p>
             </div>
             <div class="col-12">
               <hr class="main-border">
             </div>
             <div class="col-6">
-              <h5 class="main-color uppercase">Direccion</h5>
+              <h5 class="main-color uppercase"
+              data-laguange="active" 
+              data-es='Direccion' 
+              data-en='Address'></h5>
               <p>
                 Blvd. Jesús Valdez Sánchez 3602 Int. 3, San Angel, 25294 Saltillo, Coah.
               </p>
             </div>
 
             <div class="col-6">
-              <h5 class="main-color uppercase">Telefono de oficina</h5>
+              <h5 class="main-color uppercase"
+              data-laguange="active" 
+              data-es='Telefono de oficina' 
+              data-en='Office phone'></h5>
               <a class="main-link" href="tel:+8446577662"><i class="bi bi-telephone"></i> 844 657 7662</a>
               
-              <h5 class="main-color uppercase mt-4">Telefono celular</h5>
+              <h5 class="main-color uppercase mt-4"
+              data-laguange="active" 
+              data-es='Telefono celular' 
+              data-en='Cell phone'></h5>
               <a class="main-link" href="tel:+8127488530"><i class="bi bi-phone"></i> 812 748 8530</a>
 
-              <h5 class="main-color uppercase mt-4">Telefono Whatsapp</h5>
+              <h5 class="main-color uppercase mt-4"
+              data-laguange="active" 
+              data-es='Telefono Whatsapp' 
+              data-en='Whatsapp phone'></h5>
               <a class="main-link" href="https://wa.me/8127488530" target="_blank" rel="noopener noreferrer"><i class="bi bi-whatsapp"></i> 812 748 8530</a>
             </div>
           </div>
@@ -136,11 +159,12 @@
     <div class="container">
       <div class="row">
         <div class="col-lg-8 col-12">
-          © Copyright 2024 <span class="uppercase"> <span class="font-weight-bold">FI<span class="accent-color">MA</span>C Co<span class="accent-color">ah</span>uila SA de CV</span></span>. Todos los derechos reservados
+          © Copyright <span id="current_year"></span> <span class="uppercase"> <span class="font-weight-bold">FI<span class="accent-color">MA</span>C Co<span class="accent-color">ah</span>uila SA de CV</span></span>. 
+          <span data-laguange="active" data-es='Todos los derechos reservados ' data-en='All rights reserved'></span> 
         </div>
   
          <div class="col-lg-4 col-12 text-lg-end text-start mt-lg-0 mt-3">
-          Diseñado por <a href="http://ldp.mx" target="_blank" rel="noopener noreferrer" class="accent-color">LDP</a> 
+          <span data-laguange="active" data-es='Diseñado por ' data-en='Designed by '></span><a href="http://ldp.mx" target="_blank" rel="noopener noreferrer" class="accent-color">LDP</a> 
         </div>
       </div>
       
@@ -162,6 +186,7 @@
 
   <!-- Template Main JS File -->
   <script src="assets/js/main.js"></script>
+  <script src="assets/js/language.js"></script>
 
 </body>
 

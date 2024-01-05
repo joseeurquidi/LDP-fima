@@ -60,18 +60,23 @@
         <div id="hover-interactive-header"></div>
         <div id="container-links" class="col-xl-7 col-lg-8 col-12 header-main-container">
           <div class="row">
-            <div class="col-12 header-top mt-2">
+            <div class="col-10 header-top mt-2">
               <a href="https://wa.me/8127488530" target="_blank" rel="noopener noreferrer"><i class='bx bxl-whatsapp'></i> 812 748 8530</a></a>
               <a href="tel:8446577662"><i class='bx bx-phone' ></i> 844 657 7662</a>
-              <a href="mailto:ventas@fimacoahuila.com">ventas@fimacoahuila.com</a>
+              <a href="mailto:ventas@fimacoahuila.com"><i class='bx bx-envelope' ></i> ventas@fimacoahuila.com</a>
+            </div>
+            <div class="col-2 mt-2 language-selector">
+              <a href="javascript:;" id="language-button-es" class="language-button" onclick="setLanguage('es')" >Es</a>
+              <div>/</div>
+              <a href="javascript:;" id="language-button-en" class="language-button" onclick="setLanguage('en')" >En</a>
             </div>
           </div>
           <div class="col-12 container-links">
-            <a class="header-link inicio" href="index.html">Inicio</a>
-            <a class="header-link nosotros" href="nosotros.html">Nosotros</a>
-            <a class="header-link metal" href="piezas-metalicas.html">Metal Mecánica</a>
-            <a class="header-link fibra active" href="fibra-de-vidrio.html">Fibra de vidrio</a>
-            <a class="header-link contact" href="contacto.html">Contacto</a>
+            <a data-laguange="active" data-es="Inicio" data-en="Home" class="header-link inicio" href="index.html">Inicio</a>
+            <a data-laguange="active" data-es="Nosotros" data-en="About" class="header-link nosotros" href="nosotros.html">Nosotros</a>
+            <a data-laguange="active" data-es="Metal Mecánica" data-en="Metal Mechanics" class="header-link metal " href="piezas-metalicas.html">Metal Mecánica</a>
+            <a data-laguange="active" data-es="Fibra de vidrio" data-en="Fiberglass" class="header-link fibra active" href="fibra-de-vidrio.html">Fibra de vidrio</a>
+            <a data-laguange="active" data-es="Contacto" data-en="Contact" class="header-link contact" href="contacto.html">Contacto</a>
             <a class="d-lg-none d-block header-close text-white" onclick="closeMenu()"><i class="bi bi-x"></i></a>
           </div>
           
@@ -87,10 +92,15 @@
       <div class="row">
         <div class="col-8 content">
 
-          <h2 class="hero-title text-white mb-4 uppercase">Fibra de vi<span class="accent-color">dr</span>io</h2>
+          <h2 class="hero-title text-white mb-4 uppercase"
+          data-laguange="active" 
+          data-es='Fibra de vi<span class="accent-color">dr</span>io' 
+          data-en='Fiberg<span class="accent-color">la</span>ss'>Fibra de vi<span class="accent-color">dr</span>io</h2>
 
-          <p class="text-white font-18px">
-            Especializados en el desarrollo, diseño y fabricación de moldes como piezas de fibra de vidrio en plástico reforzado y diferentes tipos de procesos.
+          <p class="text-white font-18px"
+          data-laguange="active" 
+          data-es='Especializados en el desarrollo, diseño y fabricación de moldes como piezas de fibra de vidrio en plástico reforzado y diferentes tipos de procesos.' 
+          data-en='Specialized in the development, design and manufacturing of molds such as fiberglass pieces in reinforced plastic and different types of processes.'>
           </p>
 
         </div>
@@ -104,8 +114,11 @@
 
       <div class="row">
         <div class="col-12 text-white text-center mb-4">
-          <h2 class="uppercase">
-            Procesos de <span class="accent-color">fibra</span> de vidrio.
+          <h2 class="uppercase"
+          data-laguange="active" 
+          data-es='Procesos de <span class="accent-color">fibra</span> de vidrio.' 
+          data-en='<span class="accent-color">Fiber</span> glass processes.'>
+            
           </h2>
           
         </div>
@@ -113,26 +126,58 @@
       <div class="row benefits-icons">
         <div class="col-12 col-md-6 col-lg-3 text-center text-md-start">
           <i class="fa-regular fa-circle-check"></i>
-          <h4 class="uppercase">RTM</h4>
-          <p>Aplicación por vacío con molde y contra molde</p>
+          <h4 class="uppercase"
+            data-laguange="active" 
+            data-es='RTM' 
+            data-en='RTM'>
+          </h4>
+          <p
+            data-laguange="active" 
+            data-es='Aplicación por vacío con molde y contra molde' 
+            data-en='Vacuum application with mold and against mold'>
+          </p>
         </div>
 
         <div class="col-12 col-md-6 col-lg-3 text-center text-md-start">
           <i class="fa-regular fa-circle-check"></i>
-          <h4 class="uppercase">Infusión</h4>
-          <p>Aplicación por molde y bolsa de vacío</p>
+          <h4 class="uppercase"
+            data-laguange="active" 
+            data-es='Infusión' 
+            data-en='Infusion'>
+          </h4>
+          <p
+            data-laguange="active" 
+            data-es='Aplicación por molde y bolsa de vacío' 
+            data-en='Application by mold and vacuum bag'>
+          </p>
         </div>
 
         <div class="col-12 col-md-6 col-lg-3 text-center text-md-start">
           <i class="fa-regular fa-circle-check"></i>
-          <h4 class="uppercase">Pre impregnados</h4>
-          <p>Aplicación por molde y vacío</p>
+          <h4 class="uppercase"
+            data-laguange="active" 
+            data-es='Pre impregnados' 
+            data-en='Pre impregnated'>
+          </h4>
+          <p
+            data-laguange="active" 
+            data-es='Aplicación por molde y vacío' 
+            data-en='Mold and vacuum application'>
+          </p>
         </div>
 
         <div class="col-12 col-md-6 col-lg-3 text-center text-md-start">
           <i class="fa-regular fa-circle-check"></i>
-          <h4 class="uppercase">Laminado por contacto</h4>
-          <p>Aplicación manual sobre molde</p>
+          <h4 class="uppercase"
+            data-laguange="active" 
+            data-es='Laminado por contacto' 
+            data-en='Contact lamination'>
+          </h4>
+          <p
+            data-laguange="active" 
+            data-es='Aplicación manual sobre molde' 
+            data-en='Manual application on mold'>
+          </p>
         </div>
         
       </div>
@@ -148,44 +193,71 @@
           <img src="./assets/img/fibra-de-vidrio/principal-fibra-vidrio-3.jpg" class="img-fluid" alt="">
         </div> -->
         <div class="col-lg-6 col-12 px-lg-5 px-3 pt-3 ">
-          <h2 class="mb-4 uppercase">Piezas de Fibra de Vi<span class="accent-color">dr</span>io</h2>
+          <h2 class="mb-4 uppercase"
+          data-laguange="active" 
+          data-es='Piezas de Fibra de Vi<span class="accent-color">dr</span>io' 
+          data-en='Fiberg<span class="accent-color">la</span>ss Parts'></h2>
           <ul class="fa-ul ms-4 font-16px">
 
             <li>
               <span class="fa-li"><i class="fa-solid fa-check main-color"></i></span>
-              Moldes
+              <span
+              data-laguange="active" 
+              data-es='Moldes' 
+              data-en='Molds'></span>
             </li>
             <li>
               <span class="fa-li"><i class="fa-solid fa-check main-color"></i></span>
-              Cofre
+              <span
+              data-laguange="active" 
+              data-es='Cofre' 
+              data-en='Hood'></span>
             </li>
             <li>
               <span class="fa-li"><i class="fa-solid fa-check main-color"></i></span>
-              Tableros
+              <span
+              data-laguange="active" 
+              data-es='Tableros' 
+              data-en='Boards'></span>
             </li>
             <li>
               <span class="fa-li"><i class="fa-solid fa-check main-color"></i></span>
-              Defensas
-            </li>
-
-            <li>
-              <span class="fa-li"><i class="fa-solid fa-check main-color"></i></span>
-              Contenedores
-            </li>
-
-            <li>
-              <span class="fa-li"><i class="fa-solid fa-check main-color"></i></span>
-              Charolas
-            </li>
-
-            <li>
-              <span class="fa-li"><i class="fa-solid fa-check main-color"></i></span>
-              Enfriamiento
+              <span
+              data-laguange="active" 
+              data-es='Defensas' 
+              data-en='Defenses'></span>
             </li>
 
             <li>
               <span class="fa-li"><i class="fa-solid fa-check main-color"></i></span>
-              Recubrimiento
+              <span
+              data-laguange="active" 
+              data-es='Contenedores' 
+              data-en='Containers'></span>
+            </li>
+
+            <li>
+              <span class="fa-li"><i class="fa-solid fa-check main-color"></i></span>
+              <span
+              data-laguange="active" 
+              data-es='Charolas' 
+              data-en='Trays'></span>
+            </li>
+
+            <li>
+              <span class="fa-li"><i class="fa-solid fa-check main-color"></i></span>
+              <span
+              data-laguange="active" 
+              data-es='Enfriamiento' 
+              data-en='Cooling'></span>
+            </li>
+
+            <li>
+              <span class="fa-li"><i class="fa-solid fa-check main-color"></i></span>
+              <span
+              data-laguange="active" 
+              data-es='Recubrimiento' 
+              data-en='Covering'></span>
             </li>
 
           </ul>
@@ -205,7 +277,10 @@
               </a>
             </div>
             <h6 class="text-left mt-4 accent-color font-20px">
-              Moldes
+              <span
+              data-laguange="active" 
+              data-es='Moldes' 
+              data-en='Molds'></span>
             </h6>
           </div>
         </div>
@@ -219,7 +294,10 @@
               </a>
             </div>
             <h6 class="text-left mt-4 accent-color font-20px">
-              Cofre
+              <span
+              data-laguange="active" 
+              data-es='Cofre' 
+              data-en='Hood'></span>
             </h6>
           </div>
         </div>
@@ -233,7 +311,10 @@
               </a>
             </div>
             <h6 class="text-left mt-4 accent-color font-20px">
-              Tablero
+              <span
+              data-laguange="active" 
+              data-es='Tableros' 
+              data-en='Boards'></span>
             </h6>
           </div>
         </div>
@@ -247,7 +328,10 @@
               </a>
             </div>
             <h6 class="text-left mt-4 accent-color font-20px">
-              Defensa
+              <span
+              data-laguange="active" 
+              data-es='Defensas' 
+              data-en='Defenses'></span>
             </h6>
           </div>
         </div>
@@ -261,7 +345,10 @@
               </a>
             </div>
             <h6 class="text-left mt-4 accent-color font-20px">
-              Contenedores
+              <span
+              data-laguange="active" 
+              data-es='Contenedores' 
+              data-en='Containers'></span>
             </h6>
           </div>
         </div>
@@ -275,7 +362,10 @@
               </a>
             </div>
             <h6 class="text-left mt-4 accent-color font-20px">
-              Charolas
+              <span
+              data-laguange="active" 
+              data-es='Charolas' 
+              data-en='Trays'></span>
             </h6>
           </div>
         </div>
@@ -289,7 +379,10 @@
               </a>
             </div>
             <h6 class="text-left mt-4 accent-color font-20px">
-              Enfriamiento
+              <span
+              data-laguange="active" 
+              data-es='Enfriamiento' 
+              data-en='Cooling'></span>
             </h6>
           </div>
         </div>
@@ -303,7 +396,10 @@
               </a>
             </div>
             <h6 class="text-left mt-4 accent-color font-20px">
-              Recubrimiento
+              <span
+              data-laguange="active" 
+              data-es='Recubrimiento' 
+              data-en='Covering'></span>
             </h6>
           </div>
         </div>
@@ -318,11 +414,12 @@
     <div class="container">
       <div class="row">
         <div class="col-lg-8 col-12">
-          © Copyright 2024 <span class="uppercase"> <span class="font-weight-bold">FI<span class="accent-color">MA</span>C Co<span class="accent-color">ah</span>uila SA de CV</span></span>. Todos los derechos reservados
+          © Copyright <span id="current_year"></span> <span class="uppercase"> <span class="font-weight-bold">FI<span class="accent-color">MA</span>C Co<span class="accent-color">ah</span>uila SA de CV</span></span>. 
+          <span data-laguange="active" data-es='Todos los derechos reservados ' data-en='All rights reserved'></span> 
         </div>
   
          <div class="col-lg-4 col-12 text-lg-end text-start mt-lg-0 mt-3">
-          Diseñado por <a href="http://ldp.mx" target="_blank" rel="noopener noreferrer" class="accent-color">LDP</a> 
+          <span data-laguange="active" data-es='Diseñado por ' data-en='Designed by '></span><a href="http://ldp.mx" target="_blank" rel="noopener noreferrer" class="accent-color">LDP</a> 
         </div>
       </div>
       
@@ -344,7 +441,7 @@
 
   <!-- Template Main JS File -->
    <script src="assets/js/main.js"></script>
-
+   <script src="assets/js/language.js"></script>
 </body>
 
 </html>
