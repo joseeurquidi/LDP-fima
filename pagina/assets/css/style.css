@@ -181,7 +181,7 @@ h4.style{
 
 .header-top{
   display: flex;
-  justify-content: end;
+  justify-content: start;
   gap: 10px;
 }
 
@@ -199,7 +199,7 @@ h4.style{
 .header-top a:not(:first-child)::before{
   display: inline-block;
   padding-right: 10px;
-  color: rgba(255, 255, 255, 0.5);
+  color: rgba(0, 0, 0, 0.5);
   content: "/";
 }
 
@@ -1897,4 +1897,12 @@ ul.manufacture-list li{
   .index-fibra-vidrio-title{
     margin-top: 0px;
   }
+}
+
+.language-selector{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  font-size: 12px;
 }

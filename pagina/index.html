@@ -60,18 +60,23 @@
         <div id="hover-interactive-header"></div>
         <div id="container-links" class="col-xl-7 col-lg-8 col-12 header-main-container">
           <div class="row">
-            <div class="col-12 header-top mt-2">
+            <div class="col-10 header-top mt-2">
               <a href="https://wa.me/8127488530" target="_blank" rel="noopener noreferrer"><i class='bx bxl-whatsapp'></i> 812 748 8530</a></a>
               <a href="tel:8446577662"><i class='bx bx-phone' ></i> 844 657 7662</a>
-              <a href="mailto:ventas@fimacoahuila.com">ventas@fimacoahuila.com</a>
+              <a href="mailto:ventas@fimacoahuila.com"><i class='bx bx-envelope' ></i> ventas@fimacoahuila.com</a>
+            </div>
+            <div class="col-2 mt-2 language-selector">
+              <a href="javascript:;" id="language-button-es" class="language-button" onclick="setLanguage('es')" >Es</a>
+              <div>/</div>
+              <a href="javascript:;" id="language-button-en" class="language-button" onclick="setLanguage('en')" >En</a>
             </div>
           </div>
           <div class="col-12 container-links">
-            <a class="header-link inicio active" href="index.html">Inicio</a>
-            <a class="header-link nosotros" href="nosotros.html">Nosotros</a>
-            <a class="header-link metal" href="piezas-metalicas.html">Metal Mecánica</a>
-            <a class="header-link fibra" href="fibra-de-vidrio.html">Fibra de vidrio</a>
-            <a class="header-link contact" href="contacto.html">Contacto</a>
+            <a data-laguange="active" data-es="Inicio" data-en="Home" class="header-link inicio active" href="index.html">Inicio</a>
+            <a data-laguange="active" data-es="Nosotros" data-en="About" class="header-link nosotros" href="nosotros.html">Nosotros</a>
+            <a data-laguange="active" data-es="Metal Mecánica" data-en="Metal Mechanics" class="header-link metal" href="piezas-metalicas.html">Metal Mecánica</a>
+            <a data-laguange="active" data-es="Fibra de vidrio" data-en="Fiberglass" class="header-link fibra" href="fibra-de-vidrio.html">Fibra de vidrio</a>
+            <a data-laguange="active" data-es="Contacto" data-en="Contact" class="header-link contact" href="contacto.html">Contacto</a>
             <a class="d-lg-none d-block header-close text-white" onclick="closeMenu()"><i class="bi bi-x"></i></a>
           </div>
           
@@ -91,10 +96,24 @@
             padding-left: 0px;
             padding-right: 0px;">
               <!-- <h2 class="hero-title text-white">Proveemos <span class="text-white circulado">Calidad</span> en Manufactura</h2> -->
-              <h2 class="hero-titles text-white">Con nuestra certificación <span class="text-white circulado">ISO 9001:2015</span> <br>garantizamos calidad y servicio <br>de manufactura a nuestros clientes</h2>
+              <h2 class="hero-titles text-white">
+                <span 
+                  data-laguange="active" 
+                  data-es="Con nuestra certificación " 
+                  data-en="With our certification">
+                    Con nuestra certificación 
+                </span>
+                
+                <span class="text-white circulado">ISO 9001:2015</span> 
+                <span 
+                  data-laguange="active" 
+                  data-es="garantizamos calidad y servicio de manufactura a nuestros clientes." 
+                  data-en="we guarantee quality and manufacturing service to our customers."></span>
+                
+              </h2>
 
               <a class="hero-btn px-5 py-3" href="contacto.html">
-                <span class="position-relative">Contacto</span>
+                <span class="position-relative" data-laguange="active" data-es="Contacto" data-en="Contact">Contacto</span>
               </a>
             </div>
             <div class="col-lg-6 col-12"></div>
@@ -122,9 +141,19 @@
           <div class="row">
             
             <div class="col-6 carrousel-container">
-              <h2 class="hero-titles text-black">Fabri<span class="accent-color">ca</span>ción de moldes y comp<span class="accent-color">on</span>entes<br> de <span class="text-black">Fíbra de Vidrio</span></h2>
+              <h2 
+                class="hero-titles text-black"
+                data-laguange="active" 
+                data-es='Fabri<span class="accent-color">ca</span>ción de moldes y comp<span class="accent-color">on</span>entes<br> de <span class="text-black">Fíbra de Vidrio</span>' 
+                data-en='Manu<span class="accent-color">fa</span>cturing of Fiberglass molds and comp<span class="accent-color">on</span>ents'  >
+                
+                
+              </h2>
               <a class="hero-btn px-5 py-3" href="contacto.html">
-                <span class="position-relative">Fibra de Vidrio</span>
+                <span class="position-relative" 
+                data-laguange="active" 
+                data-es='Fibra de Vidrio' 
+                data-en='Fiberglass'></span>
               </a>
             </div>
             <div class="col-6"></div>
@@ -148,25 +177,50 @@
     <div class="container">
       <div class="row">
         <div class="col-lg-6 col-12 py-5">
-          <h2 class="font-40px"> <span class="font-60px">FI<span class="accent-color">MA</span>C</span> es una empresa especializada en la fabricación de piezas metálicas y fibra de vidrio para el sector industrial ofreciendo una amplia variedad de procesos para desarrollar cualquier tipo de pieza.</h2>
+          <h2 class="font-40px"> 
+            <span class="font-60px">FI<span class="accent-color">MA</span>C</span> 
 
-          <h5 class="main-color">10<i class='bx bx-plus'></i> años de servicio</h5>
+            <span class="position-relative" 
+                data-laguange="active" 
+                data-es='es una empresa especializada en la fabricación de piezas metálicas y fibra de vidrio para el sector industrial ofreciendo una amplia variedad de procesos para desarrollar cualquier tipo de pieza.' 
+                data-en='is a company specialized in the manufacture of metal and fiberglass parts for the industrial sector, offering a wide variety of processes to develop any type of part.'></span>
+          </h2>
+
+          <h5 class="main-color">10<i class='bx bx-plus'></i> 
+            <span data-laguange="active" data-es='años de servicio' data-en='years of service'></span>
+          </h5>
           <!-- <p class="mt-4">Con nuestra certificación ISO 9001:2015 garantizamos calidad y servicio a nuestros clientes.</p> -->
 
           <ul class="fa-ul ms-4 font-16px mt-4">
-            <li ><span class="fa-li"><i class="fa-solid fa-circle-check main-color"></i></span>Corte laser de placa y tubo </li>
-            <li ><span class="fa-li"><i class="fa-solid fa-circle-check main-color"></i></span>Estampado </li>
-            <li ><span class="fa-li"><i class="fa-solid fa-circle-check main-color"></i></span>Dobles </li>
-            <li ><span class="fa-li"><i class="fa-solid fa-circle-check main-color"></i></span>Maquinado </li>
-            <li ><span class="fa-li"><i class="fa-solid fa-circle-check main-color"></i></span>Rectificado </li>
-            <li ><span class="fa-li"><i class="fa-solid fa-circle-check main-color"></i></span>Mallas de alambre </li>
-            <li ><span class="fa-li"><i class="fa-solid fa-circle-check main-color"></i></span>Soldadura </li>
-            <li ><span class="fa-li"><i class="fa-solid fa-circle-check main-color"></i></span>Limpieza de oxido con laser</li>
+            <li ><span class="fa-li"><i class="fa-solid fa-circle-check main-color"></i></span>
+              <span data-laguange="active" data-es='Corte laser de placa y tubo ' data-en='Laser cutting of plate and tube'></span>
+            </li>
+            <li ><span class="fa-li"><i class="fa-solid fa-circle-check main-color"></i></span>
+              <span data-laguange="active" data-es='Estampado ' data-en='Print'></span>
+            </li>
+            <li ><span class="fa-li"><i class="fa-solid fa-circle-check main-color"></i></span>
+              <span data-laguange="active" data-es='Dobles ' data-en='Double'></span>
+            </li>
+            <li ><span class="fa-li"><i class="fa-solid fa-circle-check main-color"></i></span>
+              <span data-laguange="active" data-es='Maquinado ' data-en='Machining'></span>
+            </li>
+            <li ><span class="fa-li"><i class="fa-solid fa-circle-check main-color"></i></span>
+              <span data-laguange="active" data-es='Rectificado ' data-en='Rectified'></span>
+            </li>
+            <li ><span class="fa-li"><i class="fa-solid fa-circle-check main-color"></i></span>
+              <span data-laguange="active" data-es='Mallas de alambre ' data-en='Wire meshes'></span>
+            </li>
+            <li ><span class="fa-li"><i class="fa-solid fa-circle-check main-color"></i></span>
+              <span data-laguange="active" data-es='Soldadura ' data-en='Welding'></span>
+            </li>
+            <li ><span class="fa-li"><i class="fa-solid fa-circle-check main-color"></i></span>
+              <span data-laguange="active" data-es='Limpieza de oxido con laser' data-en='Laser rust cleaning'></span>
+            </li>
           </ul>
           
           <div class="container-buttons-quick-about-2 mt-4">
             <a class="hero-btn px-5 py-3" href="nosotros.html">
-              <span class="position-relative">Nosotros</span>
+              <span class="position-relative" data-laguange="active" data-es='Nosotros' data-en='About'>Nosotros</span>
             </a>
           </div>
           
@@ -190,8 +244,15 @@
       <div class="row">
         <div class="col-12 text-center">
           <!-- <h1 class="text-white">FI<span class="accent-color">MA</span>C</h1> -->
-          <h2 class="text-white uppercase">Trato pers<span class="accent-color">on</span>alizado</h2>
-          <p class="text-white">Nos enorgullecemos de nustro servicio al cliente</p>
+          <h2 
+            class="text-white uppercase"
+            data-laguange="active" 
+            data-es='Trato pers<span class="accent-color">on</span>alizado' 
+            data-en='Pers<span class="accent-color">on</span>alized treatment'></h2>
+          <p class="text-white"
+            data-laguange="active" 
+            data-es='Nos enorgullecemos de nustro servicio al cliente' 
+            data-en='We pride ourselves on our customer service'></p>
         </div>
 
       </div>
@@ -202,7 +263,10 @@
     <div class="container">
       <div class="row">
         <div class="col-12 mb-5">
-          <h2 class="hero-title text-center uppercase">Servicios</h2>
+          <h2 class="hero-title text-center uppercase"
+            data-laguange="active" 
+            data-es='Servicios' 
+            data-en='Services'>Servicios</h2>
         </div>
       </div>
 
@@ -215,11 +279,17 @@
             </div>
             <div class="col-12 desc-quick-services">
               <div class="pt-5 pb-4">
-                <h2 class="text-center uppercase">Metal Mecánica</h2>
+                <h2 class="text-center uppercase"
+                    data-laguange="active" 
+                    data-es='Metal Mecánica' 
+                    data-en='Metal Mechanics'>Metal Mecánica</h2>
 
                 <div class="d-flex justify-content-center mt-5 mb-4">
                   <a class="hero-btn px-5 py-3" href="piezas-metalicas.html">
-                    <span class="position-relative">Saber más</span>
+                    <span class="position-relative"
+                          data-laguange="active" 
+                          data-es='Saber más' 
+                          data-en='Know more'>Saber más</span>
                   </a>
                 </div>
                 
@@ -235,11 +305,17 @@
             </div>
             <div class="col-12 desc-quick-services">
               <div class="pt-5 pb-4">
-                <h2 class="text-center uppercase index-fibra-vidrio-title">Fibra de vidrio</h2>
+                <h2 class="text-center uppercase index-fibra-vidrio-title"
+                data-laguange="active" 
+                data-es='Fibra de vidrio' 
+                data-en='Fiberglass'>Fibra de vidrio</h2>
 
                 <div class="d-flex justify-content-center mt-5 mb-4">
                   <a class="hero-btn px-5 py-3" href="fibra-de-vidrio.html">
-                    <span class="position-relative">Saber más</span>
+                    <span class="position-relative"
+                          data-laguange="active" 
+                          data-es='Saber más' 
+                          data-en='Know more'>Saber más</span>
                   </a>
                 </div>
                 
@@ -257,11 +333,12 @@
     <div class="container">
       <div class="row">
         <div class="col-lg-8 col-12">
-          © Copyright 2024 <span class="uppercase"> <span class="font-weight-bold">FI<span class="accent-color">MA</span>C Co<span class="accent-color">ah</span>uila SA de CV</span></span>. Todos los derechos reservados
+          © Copyright <span id="current_year"></span> <span class="uppercase"> <span class="font-weight-bold">FI<span class="accent-color">MA</span>C Co<span class="accent-color">ah</span>uila SA de CV</span></span>. 
+          <span data-laguange="active" data-es='Todos los derechos reservados ' data-en='All rights reserved'></span> 
         </div>
   
          <div class="col-lg-4 col-12 text-lg-end text-start mt-lg-0 mt-3">
-          Diseñado por <a href="http://ldp.mx" target="_blank" rel="noopener noreferrer" class="accent-color">LDP</a> 
+          <span data-laguange="active" data-es='Diseñado por ' data-en='Designed by '></span><a href="http://ldp.mx" target="_blank" rel="noopener noreferrer" class="accent-color">LDP</a> 
         </div>
       </div>
       
@@ -283,7 +360,7 @@
 
   <!-- Template Main JS File -->
    <script src="assets/js/main.js"></script>
-
+   <script src="assets/js/language.js"></script>
 </body>
 
 </html>
