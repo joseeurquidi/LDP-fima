@@ -59,18 +59,23 @@
         <div id="hover-interactive-header"></div>
         <div id="container-links" class="col-xl-7 col-lg-8 col-12 header-main-container">
           <div class="row">
-            <div class="col-12 header-top mt-2">
+            <div class="col-10 header-top mt-2">
               <a href="https://wa.me/8127488530" target="_blank" rel="noopener noreferrer"><i class='bx bxl-whatsapp'></i> 812 748 8530</a></a>
               <a href="tel:8446577662"><i class='bx bx-phone' ></i> 844 657 7662</a>
-              <a href="mailto:ventas@fimacoahuila.com">ventas@fimacoahuila.com</a>
+              <a href="mailto:ventas@fimacoahuila.com"><i class='bx bx-envelope' ></i> ventas@fimacoahuila.com</a>
+            </div>
+            <div class="col-2 mt-2 language-selector">
+              <a href="javascript:;" id="language-button-es" class="language-button" onclick="setLanguage('es')" >Es</a>
+              <div>/</div>
+              <a href="javascript:;" id="language-button-en" class="language-button" onclick="setLanguage('en')" >En</a>
             </div>
           </div>
           <div class="col-12 container-links">
-            <a class="header-link inicio" href="index.html">Inicio</a>
-            <a class="header-link nosotros active" href="nosotros.html">Nosotros</a>
-            <a class="header-link metal" href="piezas-metalicas.html">Metal Mecánica</a>
-            <a class="header-link fibra" href="fibra-de-vidrio.html">Fibra de vidrio</a>
-            <a class="header-link contact" href="contacto.html">Contacto</a>
+            <a data-laguange="active" data-es="Inicio" data-en="Home" class="header-link inicio" href="index.html">Inicio</a>
+            <a data-laguange="active" data-es="Nosotros" data-en="About" class="header-link nosotros active" href="nosotros.html">Nosotros</a>
+            <a data-laguange="active" data-es="Metal Mecánica" data-en="Metal Mechanics" class="header-link metal" href="piezas-metalicas.html">Metal Mecánica</a>
+            <a data-laguange="active" data-es="Fibra de vidrio" data-en="Fiberglass" class="header-link fibra" href="fibra-de-vidrio.html">Fibra de vidrio</a>
+            <a data-laguange="active" data-es="Contacto" data-en="Contact" class="header-link contact" href="contacto.html">Contacto</a>
             <a class="d-lg-none d-block header-close " onclick="closeMenu()"><i class="bi bi-x"></i></a>
           </div>
           
@@ -87,7 +92,11 @@
       <div class="row">
         <div class="col-12 content">
 
-          <h2 class="hero-title text-white mb-0">No<span class="accent-color">so</span>tros</h2>
+          <h2 class="hero-title text-white mb-0"
+            data-laguange="active" 
+            data-es='No<span class="accent-color">so</span>tros' 
+            data-en='Ab<span class="accent-color">ou</span>t'
+          ></h2>
         </div>
       </div>
     </div>
@@ -109,38 +118,61 @@
 
       <div class="row">
         <div class="col-12 mb-5">
-          <h1>Con una trayectoria de mas de 10 años FI<span class="accent-color">MA</span>C se ha posicionado en el sector industrial de Saltillo Coahuila y sus alrededores como exportando a diferentes sectores de Estados Unidos.<br> Tenemos el conocimiento, capacitación y compromiso de garantizar los servicios que ofrecemos a nuestros clientes.</h1>
+          <h1
+          data-laguange="active" 
+          data-es='Con una trayectoria de mas de 10 años FI<span class="accent-color">MA</span>C se ha posicionado en el sector industrial de Saltillo Coahuila y sus alrededores como exportando a diferentes sectores de Estados Unidos.<br> Tenemos el conocimiento, capacitación y compromiso de garantizar los servicios que ofrecemos a nuestros clientes.' 
+          data-en='With a history of more than 10 years, FI<span class="accent-color">MA</span>C has positioned itself in the industrial sector of Saltillo Coahuila and its surroundings as an exporter to different sectors of the United States. We have the knowledge, training and commitment to guarantee the services we offer to our clients'></h1>
         </div>
         <div class="col-md-6 col-12">
-          <h2 class="values-title uppercase">Misión</h2>
+          <h2 class="values-title uppercase"
+          data-laguange="active" 
+          data-es='Misión' 
+          data-en='Mission'></h2>
 
-          <p>
-            Proveer maquinados y componentes de fibra de vidrio con alta
-            tecnología y diseño en sinergia con el rubro metal mecánico
-            que mejoren la calidad de nuestros clientes.
+          <p
+          data-laguange="active" 
+          data-es='Proveer maquinados y componentes de fibra de vidrio con alta tecnología y diseño en sinergia con el rubro metal mecánico que mejoren la calidad de nuestros clientes.' 
+          data-en='Provide machining and fiberglass components with high technology and design in synergy with the mechanical metal sector that improve the quality of our clients.'>
           </p>
         </div>
 
         <div class="col-md-6 col-12">
-          <h2 class="values-title uppercase">Visión</h2>
+          <h2 class="values-title uppercase"
+          data-laguange="active" 
+          data-es='Visión' 
+          data-en='Vision'></h2>
 
-          <p>
-            Ser una compañía solida competitiva e innovadora por la
-            calidad y técnica en la integración de maquinado y fibra de
-            vidrio en sinergia con el rubro metal mecánico para el mercado
-            industrial.
+          <p
+          data-laguange="active" 
+          data-es='Ser una compañía solida competitiva e innovadora por la calidad y técnica en la integración de maquinado y fibra de vidrio en sinergia con el rubro metal mecánico para el mercado industrial.' 
+          data-en='To be a solid competitive and innovative company due to quality and technique in the integration of machining and fiberglass in synergy with the mechanical metal sector for the industrial market.'>
           </p>
         </div>
 
 
         <div class="col-12 mt-5">
-          <h2 class="values-title uppercase">Politica de calidad</h2>
+          <h2 class="values-title uppercase"
+          data-laguange="active" 
+          data-es='Politica de calidad' 
+          data-en='Quality politics'></h2>
 
           <ul class="policy-list mt-3">
-            <li>En la empresa nos dedicamos a la fabricación de piezas metálicas, elaboración de moldes y componentes de fibra de vidrio de la mas alta calidad.</li>
-            <li>Buscando la completa satisfacción del cliente mediante productos que rebasen sus requisitos.</li>
-            <li>Buscando la excelencia de nuestros productos basados en los requisitos de la norma ISO:2015 y el cumplimiento de los objetivos de calidad.</li>
-            <li>Mediante la mejora continua en todos los procesos de la organización</li>
+            <li
+            data-laguange="active" 
+            data-es='En la empresa nos dedicamos a la fabricación de piezas metálicas, elaboración de moldes y componentes de fibra de vidrio de la mas alta calidad.' 
+            data-en='At the company we are dedicated to the manufacture of metal parts, manufacturing molds and fiberglass components of the highest quality.'></li>
+            <li
+            data-laguange="active" 
+            data-es='Buscando la completa satisfacción del cliente mediante productos que rebasen sus requisitos.' 
+            data-en='Seeking complete customer satisfaction through products that exceed their requirements.'></li>
+            <li
+            data-laguange="active" 
+            data-es='Buscando la excelencia de nuestros productos basados en los requisitos de la norma ISO:2015 y el cumplimiento de los objetivos de calidad.' 
+            data-en='Seeking excellence in our products based on the requirements of the ISO:2015 standard and compliance with quality objectives.'></li>
+            <li
+            data-laguange="active" 
+            data-es='Mediante la mejora continua en todos los procesos de la organización' 
+            data-en='Through continuous improvement in all organizational processes'></li>
           </ul>
         </div>
       </div>
@@ -414,11 +446,12 @@
     <div class="container">
       <div class="row">
         <div class="col-lg-8 col-12">
-          © Copyright 2024 <span class="uppercase"> <span class="font-weight-bold">FI<span class="accent-color">MA</span>C Co<span class="accent-color">ah</span>uila SA de CV</span></span>. Todos los derechos reservados
+          © Copyright <span id="current_year"></span> <span class="uppercase"> <span class="font-weight-bold">FI<span class="accent-color">MA</span>C Co<span class="accent-color">ah</span>uila SA de CV</span></span>. 
+          <span data-laguange="active" data-es='Todos los derechos reservados ' data-en='All rights reserved'></span> 
         </div>
   
          <div class="col-lg-4 col-12 text-lg-end text-start mt-lg-0 mt-3">
-          Diseñado por <a href="http://ldp.mx" target="_blank" rel="noopener noreferrer" class="accent-color">LDP</a> 
+          <span data-laguange="active" data-es='Diseñado por ' data-en='Designed by '></span><a href="http://ldp.mx" target="_blank" rel="noopener noreferrer" class="accent-color">LDP</a> 
         </div>
       </div>
       
@@ -440,7 +473,7 @@
 
   <!-- Template Main JS File -->
   <script src="assets/js/main.js"></script>
-
+  <script src="assets/js/language.js"></script>
 </body>
 
 </html>
