@@ -1,5 +1,5 @@
 :root{
-  --main-color: #ffc31d; /*#c12020;*/
+  --main-color: #24272e; /*#c12020;*/
   --main-background: #24272e;
   --main-content: #1d1f25;
   --accent-color: #c12020;
@@ -170,7 +170,7 @@ h4.style{
 .page-header{
   position: fixed;
   top: 0px;
-  background: var(--main-color);
+  background: #ffffff;
   transition: all 0.5s;
   /* height: 90px; */
   min-height: 92px;
@@ -201,16 +201,16 @@ h4.style{
 }
 
 .page-header .logo{
-  max-height: 90px;
+  height: 180px;
 }
 
 .container-logo{
   top: 0px;
-  left: 0px;
+  left: -40px;
   position: absolute;
   background-color: #ffffff;
   padding: 20px;
-  box-shadow: 0 3px 10px rgba(0,0,0,.45);
+  /* box-shadow: 0 3px 10px rgba(0,0,0,.45); */
 }
 
 .page-header .container-links{
@@ -223,10 +223,12 @@ h4.style{
 }
 
 .page-header .header-link{
-  color: white;
+  color: black;
+  font-weight: bold;
   opacity: 0.75;
   font-size: 15px;
   transition: all 0.5s;
+  text-transform: uppercase;
 }
 
 .page-header .header-link:hover{
@@ -235,7 +237,7 @@ h4.style{
 
 .page-header .header-link.active{
   opacity: 1;
-  color: #FFF;
+  color: black;
   font-weight: bold;
   position: relative;
 }
@@ -1198,6 +1200,22 @@ i.checks-nosotros{
   top: 0px;
 }
 
+
+.container-img-quick-aboutp{
+  position: relative;
+}
+
+.container-img-quick-aboutp::before{
+  position: absolute;
+  content: "";
+  background-color: transparent;
+  border: 20px solid var(--accent-color);
+  width: calc(100% - 6rem);
+  height: calc(100% - 13rem);
+  right: 0px;
+  top: 0px;
+}
+
 @media (max-width: 1200px) {
   .container-img-quick-about::before{
     height: calc(100% - 16rem);
@@ -1459,6 +1477,25 @@ i.checks-nosotros{
   z-index: 0;
 }
 
+.main-herob{
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  min-height: 800px;
+}
+
+.main-herob::before{
+  content: "";
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  width: 100%;
+  height: 100%;
+  opacity: 0.45;
+  z-index: 0;
+}
+
 .hero-item{
   background-position: center;
   background-repeat: no-repeat;
@@ -1510,8 +1547,8 @@ i.checks-nosotros{
 .carrousel-container{
   padding-top: 224px;
   padding-bottom: 223px;
-  padding-left: 50px;
-  padding-right: 50px;
+  padding-left: 0px;
+  padding-right: 0px;
 }
 
 .mini-carrousel-container{
@@ -1526,6 +1563,11 @@ i.checks-nosotros{
 .hero-title{
   font-size: 70px;
   line-height: 80px;
+}
+
+.hero-titles{
+  font-size: 35px;
+  line-height: 45px;
 }
 
 .text-white-75{
@@ -1759,14 +1801,14 @@ i.checks-nosotros{
   opacity: 0.6;
   z-index: 0;
   
-  background: linear-gradient(90deg, rgba(255, 195, 29, 1) 30%, rgba(0, 0, 0, 0) 100%);
+  background: linear-gradient(90deg, rgb(18 18 18) 30%, rgba(0, 0, 0, 0) 100%)
 }
 
 .main-image-manufacture .content{
   position: relative;
   z-index: 9;
-  padding-top: 150px;
-  padding-bottom: 150px;
+  padding-top: 450px;
+  padding-bottom: 120px;
   padding-left: 50px;
   padding-right: 50px;
 }

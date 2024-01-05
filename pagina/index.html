@@ -47,10 +47,10 @@
     <div class="container">
       <div class="row">
         
-        <div class="col-lg-3 col-12 p-3 logo-container">
+        <div class="col-lg-5 col-12 p-3 logo-container">
           <div class="container-logo">
             <img src="assets/img/logos/logo.svg" class="img-fluid logo" alt="" srcset="">
-            <h4 class="text-center mb-0 mt-3 text-black">FIMAC COAHUILA</h3>
+            <h4 class="text-center mb-0 mt-3 text-dark">FIMAC COAHUILA</h3>
           </div>
             
           <a class="d-lg-none d-block menu" onclick="openMenu()">
@@ -58,7 +58,7 @@
           </a>
         </div>
         <div id="hover-interactive-header"></div>
-        <div id="container-links" class="col-lg-9 col-12 header-main-container">
+        <div id="container-links" class="col-lg-7 col-12 header-main-container">
           <div class="row">
             <div class="col-12 header-top mt-2">
               <a href="https://wa.me/8127488530" target="_blank" rel="noopener noreferrer"><i class='bx bxl-whatsapp'></i> 812 748 8530</a></a>
@@ -69,7 +69,7 @@
           <div class="col-12 container-links">
             <a class="header-link inicio active" href="index.html">Inicio</a>
             <a class="header-link nosotros" href="nosotros.html">Nosotros</a>
-            <a class="header-link metal" href="piezas-metalicas.html">Piezas Mecánicas</a>
+            <a class="header-link metal" href="piezas-metalicas.html">Metal Mecánica</a>
             <a class="header-link fibra" href="fibra-de-vidrio.html">Fibra de vidrio</a>
             <a class="header-link contact" href="contacto.html">Contacto</a>
             <a class="d-lg-none d-block header-close text-white" onclick="closeMenu()"><i class="bi bi-x"></i></a>
@@ -83,13 +83,16 @@
 
   <div id="carousel" class="hero-carousel">
     <div class="owl-carousel owl-theme">
-      <div class="item main-hero" style="background-image: url(./assets/img/inicios.jpg);">
+      <div class="item main-hero" style="background-image: url(./assets/img/inicios.old.jpg);">
         <div class="container z-1 position-relative">
           <div class="row">
-            <div class="col-6 carrousel-container">
-              <h1 class="text-white">FI<span class="accent-color">MA</span>C</h1>
-              <h2 class="hero-title text-white">Proveemos <span class="main-color circulado">Calidad</span> en Manufactura</h2>
-              <p class="text-white-75">Tenemos la misión de ser los principales distribuidores de Mecanica y Fibra de Vidrio en Coahuila</p>
+            <div class="col-6 carrousel-container" style="padding-top: 440px;
+            padding-bottom: 100px;
+            padding-left: 0px;
+            padding-right: 0px;">
+              <!-- <h2 class="hero-title text-white">Proveemos <span class="text-white circulado">Calidad</span> en Manufactura</h2> -->
+              <h2 class="hero-titles text-white">Con nuestra certificación <span class="text-white circulado">ISO 9001:2015</span> <br>garantizamos calidad y servicio <br>de manufactura a nuestros clientes</h2>
+
               <a class="hero-btn px-5 py-3" href="contacto.html">
                 <span class="position-relative">Contacto</span>
               </a>
@@ -99,13 +102,12 @@
         </div>
       </div>
 
-      <div class="item main-hero" style="background-image: url(./assets/img/metal/principal-maquinado-1.png);">
+      <!-- <div class="item main-hero" style="background-image: url(./assets/img/metal/principal-maquinado-1.png);">
         <div class="container z-1 position-relative">
           <div class="row">
             <div class="col-6"></div>
             <div class="col-6 carrousel-container text-end">
-              <h1 class="text-white">FI<span class="accent-color">MA</span>C</h1>
-              <h2 class="hero-title text-white">Expertos en <span class="main-color">Mecánica</span></h2>
+              <h2 class="hero-title text-white">Expertos en <span class="text-white">Mecánica</span></h2>
               <p class="text-white-75">Contamos con diferentes equipos de alta calidad para cumplir y satisfacer las expectativas</p>
               <a class="hero-btn px-5 py-3" href="contacto.html">
                 <span class="position-relative">Metal Mecánica</span>
@@ -113,27 +115,26 @@
             </div>
           </div>
         </div>
-      </div>
+      </div> -->
 
-      <div class="item main-hero" style="background-image: url(./assets/img/fibra-de-vidrio/principal-fibra-vidrio-1.png);">
+      <div class="item main-herob" style="background-image: url(./assets/img/fibra-de-vidrio/principa-fibra-vidrio-1.jpg); background-size: contain; background-position: 210px center;">
         <div class="container z-1 position-relative">
           <div class="row">
-            <div class="col-6"></div>
-            <div class="col-6 carrousel-container text-end">
-              <h1 class="text-white">FI<span class="accent-color">MA</span>C</h1>
-              <h2 class="hero-title text-white">Moldeados en <span class="main-color">Fíbra de Vidrio</span></h2>
-              <p class="text-white-75">Especializados en el desarrollo, diseño y fabricación de moldes como piezas de fibra de vidrio en plástico reforzado</p>
+            
+            <div class="col-6 carrousel-container">
+              <h2 class="hero-titles text-black">Fabri<span class="accent-color">ca</span>ción de moldes y comp<span class="accent-color">on</span>entes<br> de <span class="text-black">Fíbra de Vidrio</span></h2>
               <a class="hero-btn px-5 py-3" href="contacto.html">
                 <span class="position-relative">Fibra de Vidrio</span>
               </a>
             </div>
+            <div class="col-6"></div>
           </div>
         </div>
       </div>
     </div>
   </div>
 
-  <div class="barra">
+  <!-- <div class="barra">
     <div class="container">
       <div class="row">
         <div class="col-12 d-flex justify-content-center">
@@ -141,7 +142,7 @@
         </div>
       </div>
     </div>
-  </div>
+  </div> -->
 
   <div class="quick-about-2" >
     <div class="container">
@@ -150,13 +151,17 @@
           <h2 class="font-40px"> <span class="font-60px">FI<span class="accent-color">MA</span>C</span> es una empresa especializada en la fabricación de piezas metálicas y fibra de vidrio para el sector industrial ofreciendo una amplia variedad de procesos para desarrollar cualquier tipo de pieza.</h2>
 
           <h5 class="main-color">10<i class='bx bx-plus'></i> años de servicio</h5>
-          <p class="mt-4">Con nuestra certificación ISO 9001:2015 garantizamos calidad y servicio a nuestros clientes.</p>
+          <!-- <p class="mt-4">Con nuestra certificación ISO 9001:2015 garantizamos calidad y servicio a nuestros clientes.</p> -->
 
-          <ul class="fa-ul ms-4 font-16px">
-            <li ><span class="fa-li"><i class="fa-solid fa-circle-check main-color"></i></span>Máxima capacitación</li>
-            <li ><span class="fa-li"><i class="fa-solid fa-circle-check main-color"></i></span>Alta tasa de satisfación</li>
-            <li ><span class="fa-li"><i class="fa-solid fa-circle-check main-color"></i></span>Eficaz servicio</li>
-            <li ><span class="fa-li"><i class="fa-solid fa-circle-check main-color"></i></span>Cuidamos del medio ambiente</li>
+          <ul class="fa-ul ms-4 font-16px mt-4">
+            <li ><span class="fa-li"><i class="fa-solid fa-circle-check main-color"></i></span>Corte laser de placa y tubo </li>
+            <li ><span class="fa-li"><i class="fa-solid fa-circle-check main-color"></i></span>Estampado </li>
+            <li ><span class="fa-li"><i class="fa-solid fa-circle-check main-color"></i></span>Dobles </li>
+            <li ><span class="fa-li"><i class="fa-solid fa-circle-check main-color"></i></span>Maquinado </li>
+            <li ><span class="fa-li"><i class="fa-solid fa-circle-check main-color"></i></span>Rectificado </li>
+            <li ><span class="fa-li"><i class="fa-solid fa-circle-check main-color"></i></span>Mallas de alambre </li>
+            <li ><span class="fa-li"><i class="fa-solid fa-circle-check main-color"></i></span>Soldadura </li>
+            <li ><span class="fa-li"><i class="fa-solid fa-circle-check main-color"></i></span>Limpieza de oxido con laser</li>
           </ul>
           
           <div class="container-buttons-quick-about-2 mt-4">
@@ -167,30 +172,25 @@
           
         </div>
 
-        <div class="col-lg-6 col-12 p-5 container-img-quick-about">
-          <img src="./assets/img/mplanta.png" alt=""  class="img-quick-about">
-          <div class="img-quick-about-desc uppercase font-anton">
+        <div class="col-lg-6 col-12 p-5 container-img-quick-about container-img-quick-aboutp">
+          <img src="./assets/img/planta2.jpg" alt=""  class="img-quick-about">
+          <!-- <div class="img-quick-about-desc uppercase font-anton">
             Planta<br>especializada
-          </div>
+          </div> -->
         </div>
       </div>
     </div>
   </div>
 
-  <div class="quick-contact simple-item" style="background-image: url(./assets/img/contacto.jpg); background-position: 0px -610px;">
+  <div class="quick-contact simple-item" style="    background-color: #1c1c1c;">
     <div class="container z-1 position-relative">
       <div class="row">
-        <div class="col-md-6 col-12 text-center">
-          <h1 class="text-white">FI<span class="accent-color">MA</span>C</h1>
-          <h2 class="text-white">Trato personalizado</h2>
+        <div class="col-12 text-center">
+          <!-- <h1 class="text-white">FI<span class="accent-color">MA</span>C</h1> -->
+          <h2 class="text-white uppercase">Trato pers<span class="accent-color">on</span>alizado</h2>
           <p class="text-white">Nos enorgullecemos de nustro servicio al cliente</p>
         </div>
 
-        <div class="col-md-6 col-12 text-center d-flex justify-content-center align-items-center">
-          <a class="hero-btn px-5 py-3" href="contacto.html">
-            <span class="position-relative">Contacto</span>
-          </a>
-        </div>
       </div>
     </div>
   </div>
@@ -199,20 +199,40 @@
     <div class="container">
       <div class="row">
         <div class="col-12 mb-5">
-          <h2 class="hero-title text-center">Servicios</h2>
+          <h2 class="hero-title text-center uppercase">Servicios</h2>
         </div>
       </div>
 
       <div class="row">
+
         <div class="offset-lg-1 offset-0 col-lg-5 col-md-6 col-12 mt-3">
           <div class="row mx-0">
             <div class="col-12 px-0">
-              <img src="./assets/img/inicio/principal-fibra-vidrio-1.png" alt="" class="img-fluid">
+              <img src="./assets/img/inicio/metal-m.png" alt="" class="img-fluid">
             </div>
             <div class="col-12 desc-quick-services">
               <div class="pt-5 pb-4">
-                <h2 class="text-center">Fibra de vidrio</h2>
-                <p class="mt-4 text-center">Contamos con diferentes equipos de alta calidad para cumplir y satisfacer las expectativas en nuestro trabajo</p>
+                <h2 class="text-center uppercase">Metal Mecánica</h2>
+
+                <div class="d-flex justify-content-center mt-5 mb-4">
+                  <a class="hero-btn px-5 py-3" href="piezas-metalicas.html">
+                    <span class="position-relative">Saber más</span>
+                  </a>
+                </div>
+                
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <div class=" col-lg-5 col-md-6 col-12 mt-3">
+          <div class="row mx-0">
+            <div class="col-12 px-0">
+              <img src="./assets/img/inicio/fibra-de-vidro2.png" alt="" class="img-fluid">
+            </div>
+            <div class="col-12 desc-quick-services">
+              <div class="pt-5 pb-4">
+                <h2 class="text-center uppercase" style="    margin-top: 84px;">Fibra de vidrio</h2>
 
                 <div class="d-flex justify-content-center mt-5 mb-4">
                   <a class="hero-btn px-5 py-3" href="fibra-de-vidrio.html">
@@ -225,26 +245,7 @@
           </div>
         </div>
 
-        <div class="col-lg-5 col-md-6 col-12 mt-3">
-          <div class="row mx-0">
-            <div class="col-12 px-0">
-              <img src="./assets/img/inicio/principal-maquinado-1.png" alt="" class="img-fluid">
-            </div>
-            <div class="col-12 desc-quick-services">
-              <div class="pt-5 pb-4">
-                <h2 class="text-center">Piezas Mecánicas</h2>
-                <p class="mt-4 text-center">Especializados en el desarrollo, diseño y fabricación de moldes como piezas de fibra de vidrio en plástico reforzado</p>
-
-                <div class="d-flex justify-content-center mt-5 mb-4">
-                  <a class="hero-btn px-5 py-3" href="piezas-metalicas.html">
-                    <span class="position-relative">Saber más</span>
-                  </a>
-                </div>
-                
-              </div>
-            </div>
-          </div>
-        </div>
+        
       </div>
     </div>
   </div>
@@ -253,11 +254,11 @@
     <div class="container">
       <div class="row">
         <div class="col-lg-8 col-12">
-          © Copyright 2023 <span class="font-weight-bold">FI<span class="accent-color">MA</span>C Coahuila SA de CV</span>. Todos los derechos reservados
+          © Copyright 2024 <span class="uppercase"> <span class="font-weight-bold">FI<span class="accent-color">MA</span>C Co<span class="accent-color">ah</span>uila SA de CV</span></span>. Todos los derechos reservados
         </div>
   
          <div class="col-lg-4 col-12 text-lg-end text-start mt-lg-0 mt-3">
-          Diseñado por <a href="http://ldp.mx" target="_blank" rel="noopener noreferrer">LDP</a> 
+          Diseñado por <a href="http://ldp.mx" target="_blank" rel="noopener noreferrer" class="accent-color">LDP</a> 
         </div>
       </div>
       
