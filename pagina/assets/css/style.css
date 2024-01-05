@@ -34,6 +34,10 @@ h6 {
   color: var(--accent-color)
 }
 
+.accent-color-important{
+  color: var(--accent-color) !important;
+}
+
 .white-color{
   color: #fafafa;
 }
@@ -1912,4 +1916,18 @@ ul.manufacture-list li{
   align-items: center;
   gap: 10px;
   font-size: 12px;
+}
+
+.language-button{
+  color: black;
+}
+
+@media (max-width: 992px) {
+  .language-selector{
+    justify-content: start;
+  }
+
+  .language-button{
+    color: white;
+  }
 }
