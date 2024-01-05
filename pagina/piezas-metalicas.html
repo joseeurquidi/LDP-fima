@@ -60,18 +60,23 @@
         <div id="hover-interactive-header"></div>
         <div id="container-links" class="col-xl-7 col-lg-8 col-12 header-main-container">
           <div class="row">
-            <div class="col-12 header-top mt-2">
+            <div class="col-10 header-top mt-2">
               <a href="https://wa.me/8127488530" target="_blank" rel="noopener noreferrer"><i class='bx bxl-whatsapp'></i> 812 748 8530</a></a>
               <a href="tel:8446577662"><i class='bx bx-phone' ></i> 844 657 7662</a>
-              <a href="mailto:ventas@fimacoahuila.com">ventas@fimacoahuila.com</a>
+              <a href="mailto:ventas@fimacoahuila.com"><i class='bx bx-envelope' ></i> ventas@fimacoahuila.com</a>
+            </div>
+            <div class="col-2 mt-2 language-selector">
+              <a href="javascript:;" id="language-button-es" class="language-button" onclick="setLanguage('es')" >Es</a>
+              <div>/</div>
+              <a href="javascript:;" id="language-button-en" class="language-button" onclick="setLanguage('en')" >En</a>
             </div>
           </div>
           <div class="col-12 container-links">
-            <a class="header-link inicio" href="index.html">Inicio</a>
-            <a class="header-link nosotros" href="nosotros.html">Nosotros</a>
-            <a class="header-link metal active" href="piezas-metalicas.html">Metal Mecánica</a>
-            <a class="header-link fibra" href="fibra-de-vidrio.html">Fibra de vidrio</a>
-            <a class="header-link contact" href="contacto.html">Contacto</a>
+            <a data-laguange="active" data-es="Inicio" data-en="Home" class="header-link inicio" href="index.html">Inicio</a>
+            <a data-laguange="active" data-es="Nosotros" data-en="About" class="header-link nosotros" href="nosotros.html">Nosotros</a>
+            <a data-laguange="active" data-es="Metal Mecánica" data-en="Metal Mechanics" class="header-link metal active" href="piezas-metalicas.html">Metal Mecánica</a>
+            <a data-laguange="active" data-es="Fibra de vidrio" data-en="Fiberglass" class="header-link fibra" href="fibra-de-vidrio.html">Fibra de vidrio</a>
+            <a data-laguange="active" data-es="Contacto" data-en="Contact" class="header-link contact" href="contacto.html">Contacto</a>
             <a class="d-lg-none d-block header-close text-white" onclick="closeMenu()"><i class="bi bi-x"></i></a>
           </div>
           
@@ -87,57 +92,60 @@
       <div class="row">
         <div class="col-12 content" style="    padding-top: 350px; padding-bottom: 36px;">
 
-          <h2 class="hero-title text-white mb-5 uppercase">Metal me<span class="accent-color">cá</span>nica</h2>
+          <h2 class="hero-title text-white mb-5 uppercase"
+          data-laguange="active" 
+          data-es='Metal me<span class="accent-color">cá</span>nica' 
+          data-en='Metal me<span class="accent-color">ch</span>anics'></h2>
 
           <ul class="fa-ul manufacture-list">
             <li class="text-white">
               <span class="fa-li">
                 <i class="fa-solid fa-check"></i>
               </span>
-              Corte laser de placa y tubo 
+              <span data-laguange="active" data-es='Corte laser de placa y tubo ' data-en='Laser cutting of plate and tube'></span>
             </li>
             <li class="text-white">
               <span class="fa-li">
                 <i class="fa-solid fa-check"></i>
               </span>
-              Estampado 
+              <span data-laguange="active" data-es='Estampado ' data-en='Print'></span>
             </li>
             <li class="text-white">
               <span class="fa-li">
                 <i class="fa-solid fa-check"></i>
               </span>
-              Dobles 
+              <span data-laguange="active" data-es='Dobles ' data-en='Double'></span>
             </li>
             <li class="text-white">
               <span class="fa-li">
                 <i class="fa-solid fa-check"></i>
               </span>
-              Maquinado 
+              <span data-laguange="active" data-es='Maquinado ' data-en='Machining'></span>
             </li>
             <li class="text-white">
               <span class="fa-li">
                 <i class="fa-solid fa-check"></i>
               </span>
-              Rectificado 
+              <span data-laguange="active" data-es='Rectificado ' data-en='Rectified'></span>
             </li>
             <li class="text-white">
               <span class="fa-li">
                 <i class="fa-solid fa-check"></i>
               </span>
-              Mallas de alambre 
+              <span data-laguange="active" data-es='Mallas de alambre ' data-en='Wire meshes'></span>
             </li>
             <li class="text-white">
               <span class="fa-li">
                 <i class="fa-solid fa-check"></i>
               </span>
-              Soldadura 
+              <span data-laguange="active" data-es='Soldadura ' data-en='Welding'></span>
             </li>
 
             <li class="text-white">
               <span class="fa-li">
                 <i class="fa-solid fa-check"></i>
               </span>
-              Limpieza de oxido con laser
+              <span data-laguange="active" data-es='Limpieza de oxido con laser' data-en='Laser rust cleaning'></span>
             </li>
 
           </ul>
@@ -151,8 +159,10 @@
 
       <div class="row">
         <div class="col-12 text-white text-center mb-4">
-          <h2>
-            Conoce los <span class="accent-color">beneficios</span>  de nuestro equipo
+          <h2
+          data-laguange="active" 
+          data-es='Conoce los <span class="accent-color">beneficios</span>  de nuestro equipo' 
+          data-en='Learn about the <span class="accent-color">benefits</span> of our team'>
           </h2>
           
         </div>
@@ -160,32 +170,50 @@
       <div class="row benefits-icons">
         <div class="col-12 col-sm-4 col-md-4 col-lg-2  text-center text-md-start ">
           <i class="fa-solid fa-medal"></i>
-          <h4 class="uppercase">Calidad</h4>
+          <h4 class="uppercase"
+            data-laguange="active" 
+            data-es='Calidad'
+            data-en='Quality'></h4>
         </div>
 
         <div class="col-12 col-sm-4 col-md-4 col-lg-2  text-center text-md-start ">
           <i class="fa-regular fa-circle-check"></i>
-          <h4 class="uppercase">Disponiblidad</h4>
+          <h4 class="uppercase"
+            data-laguange="active" 
+            data-es='Disponiblidad'
+            data-en='Availability'></h4>
         </div>
 
         <div class="col-12 col-sm-4 col-md-4 col-lg-2  text-center text-md-start ">
           <i class="fa-solid fa-bullseye"></i>
-          <h4 class="uppercase">Precision</h4>
+          <h4 class="uppercase"
+            data-laguange="active" 
+            data-es='Precision'
+            data-en='Precision'></h4>
         </div>
 
         <div class="col-12 col-sm-4 col-md-4 col-lg-2  text-center text-md-start ">
           <i class="fa-solid fa-gears"></i>
-          <h4 class="uppercase">Eficiencia</h4>
+          <h4 class="uppercase"
+            data-laguange="active" 
+            data-es='Eficiencia'
+            data-en='Efficiency'></h4>
         </div>
 
         <div class="col-12 col-sm-4 col-md-4 col-lg-2  text-center text-md-start ">
           <i class="fa-solid fa-person-chalkboard"></i>
-          <h4 class="uppercase">Capacitación</h4>
+          <h4 class="uppercase"
+            data-laguange="active" 
+            data-es='Capacitación'
+            data-en='Training'></h4>
         </div>
 
         <div class="col-12 col-sm-4 col-md-4 col-lg-2  text-center text-md-start ">
           <i class="fa-solid fa-wrench"></i>
-          <h4 class="uppercase">Versatilidad</h4>
+          <h4 class="uppercase"
+            data-laguange="active" 
+            data-es='Versatilidad'
+            data-en='Versatility'></h4>
         </div>
         
       </div>
@@ -196,7 +224,10 @@
     <div class="container">
       <div class="row">
         <div class="col-12 mb-5">
-          <h1 class="text-center uppercase">Metal Mecánica</h1>
+          <h1 class="text-center uppercase"
+            data-laguange="active" 
+            data-es='Metal Mecánica'
+            data-en='Metal Mechanics'></h1>
         </div>
       </div>
 
@@ -209,17 +240,26 @@
                 <i class="icofont-plus"></i>
               </a>
             </div>
-            <h6 class="text-left mt-4 mb-0">
+            <h6 class="text-left mt-4 mb-0"
+            data-laguange="active" 
+            data-es='AÑO 2023'
+            data-en='YEAR 2023'>
               AÑO 2023
             </h6>
-            <h6 class="text-left mt-1 accent-color font-20px">
+            <h6 class="text-left mt-1 accent-color font-20px"
+            data-laguange="active" 
+            data-es='MAQUINA LASER PARA CORTE DE PLACA 12KW'
+            data-en='LASER MACHINE FOR PLATE CUTTING 12KW'>
               MAQUINA LASER PARA CORTE DE PLACA 12KW
             </h6>
 
             <table class="table table-borderless w-100 mt-3">
               <tbody>
                 <tr>
-                  <td class="px-0 py-0">
+                  <td class="px-0 py-0"
+                  data-laguange="active" 
+                  data-es='AREA DE TRABAJO'
+                  data-en='WORK AREA'>
                     AREA DE TRABAJO
                   </td>
                   <td class="px-0 py-0 text-end">
@@ -231,7 +271,12 @@
 
             <div class="mt-5 mb-4 text-center">
               <a class="hero-btn px-5 py-3" data-bs-toggle="modal" data-bs-target="#MAQUINA-LASER-PARA-CORTE-DE-PLACA-12KW-0">
-                <span class="position-relative">Detalles</span>
+                <span class="position-relative"
+                  data-laguange="active" 
+                  data-es='Detalles'
+                  data-en='Details'>
+                  Detalles
+                </span>
               </a>
             </div>
           </div>
@@ -268,17 +313,26 @@
                 <i class="icofont-plus"></i>
               </a>
             </div>
-            <h6 class="text-left mt-4 mb-0">
+            <h6 class="text-left mt-4 mb-0"
+            data-laguange="active" 
+            data-es='AÑO 2023'
+            data-en='YEAR 2023'>
               AÑO 2023
             </h6>
-            <h6 class="text-left mt-1 accent-color font-20px">
+            <h6 class="text-left mt-1 accent-color font-20px"
+            data-laguange="active" 
+            data-es='MAQUINA CORTE LASER DOBLE USO PLACA Y TUBO 3KW'
+            data-en='DUAL USE PLATE AND TUBE LASER CUTTING MACHINE 3KW'>
               MAQUINA CORTE LASER DOBLE USO PLACA Y TUBO 3KW
             </h6>
 
             <table class="table table-borderless w-100 mt-3">
               <tbody>
                 <tr>
-                  <td class="px-0 py-0">
+                  <td class="px-0 py-0"
+                  data-laguange="active" 
+                  data-es='AREA DE TRABAJO PLACA'
+                  data-en='PLATE WORK AREA'>
                     AREA DE TRABAJO PLACA
                   </td>
                   <td class="px-0 py-0 text-end">
@@ -286,7 +340,10 @@
                   </td>
                 </tr>
                 <tr>
-                  <td class="px-0 py-0">
+                  <td class="px-0 py-0"
+                  data-laguange="active" 
+                  data-es='LONGITUD DE TUBERIA'
+                  data-en='PIPE LENGTH'>
                     LONGITUD DE TUBERIA
                   </td>
                   <td class="px-0 py-0 text-end">
@@ -298,7 +355,12 @@
 
             <div class="mt-5 mb-4 text-center">
               <a class="hero-btn px-5 py-3" data-bs-toggle="modal" data-bs-target="#MAQUINA-CORTE-LASER-DOBLE-USO-PLACA-Y-TUBO-3KW">
-                <span class="position-relative">Detalles</span>
+                <span class="position-relative"
+                  data-laguange="active" 
+                  data-es='Detalles'
+                  data-en='Details'>
+                  Detalles
+                </span>
               </a>
             </div>
           </div>
@@ -312,17 +374,26 @@
                 <i class="icofont-plus"></i>
               </a>
             </div>
-            <h6 class="text-left mt-4 mb-0">
+            <h6 class="text-left mt-4 mb-0"
+            data-laguange="active" 
+            data-es='AÑO 2023'
+            data-en='YEAR 2023'>
               AÑO 2023
             </h6>
-            <h6 class="text-left mt-1 accent-color font-20px">
+            <h6 class="text-left mt-1 accent-color font-20px"
+            data-laguange="active" 
+            data-es='PRENSA NEUMATICA 315 TON'
+            data-en='PNEUMATIC PRESS 315 TON'>
               PRENSA NEUMATICA 315 TON
             </h6>
 
             <table class="table table-borderless w-100 mt-3">
               <tbody>
                 <tr>
-                  <td class="px-0 py-0">
+                  <td class="px-0 py-0"
+                  data-laguange="active" 
+                  data-es='AREA DE TRABAJO'
+                  data-en='WORK AREA'>
                     AREA DE TRABAJO
                   </td>
                   <td class="px-0 py-0 text-end">
@@ -330,7 +401,10 @@
                   </td>
                 </tr>
                 <tr>
-                  <td class="px-0 py-0">
+                  <td class="px-0 py-0"
+                  data-laguange="active" 
+                  data-es='GOLPES POR MINUTO'
+                  data-en='BLOWS PER MINUTE'>
                     GOLPES POR MINUTO
                   </td>
                   <td class="px-0 py-0 text-end">
@@ -342,7 +416,12 @@
             
             <div class="mt-5 mb-4 text-center">
               <a class="hero-btn px-5 py-3" data-bs-toggle="modal" data-bs-target="#PRENSA-NEUMATICA-315-TON">
-                <span class="position-relative">Detalles</span>
+                <span class="position-relative"
+                  data-laguange="active" 
+                  data-es='Detalles'
+                  data-en='Details'>
+                  Detalles
+                </span>
               </a>
             </div>
           </div>
@@ -356,17 +435,26 @@
                 <i class="icofont-plus"></i>
               </a>
             </div>
-            <h6 class="text-left mt-4 mb-0">
+            <h6 class="text-left mt-4 mb-0"
+            data-laguange="active" 
+            data-es='AÑO 2023'
+            data-en='YEAR 2023'>
               AÑO 2023
             </h6>
-            <h6 class="text-left mt-1 accent-color font-20px">
+            <h6 class="text-left mt-1 accent-color font-20px"
+            data-laguange="active" 
+            data-es='DOBLADORA HIDRAULICA 160 TON-3200'
+            data-en='HYDRAULIC BENDING MACHINE 160 TON-3200'>
               DOBLADORA HIDRAULICA 160 TON-3200
             </h6>
 
             <table class="table table-borderless w-100 mt-3">
               <tbody>
                 <tr>
-                  <td class="px-0 py-0">
+                  <td class="px-0 py-0"
+                  data-laguange="active" 
+                  data-es='LONGITUD DE FLEXION'
+                  data-en='FLEXING LENGTH'>
                     LONGITUD DE FLEXION
                   </td>
                   <td class="px-0 py-0 text-end">
@@ -378,7 +466,12 @@
 
             <div class="mt-5 mb-4 text-center">
               <a class="hero-btn px-5 py-3" data-bs-toggle="modal" data-bs-target="#DOBLADORA-HIDRAULICA-160-TON-3200">
-                <span class="position-relative">Detalles</span>
+                <span class="position-relative"
+                  data-laguange="active" 
+                  data-es='Detalles'
+                  data-en='Details'>
+                  Detalles
+                </span>
               </a>
             </div>
           </div>
@@ -392,17 +485,26 @@
                 <i class="icofont-plus"></i>
               </a>
             </div>
-            <h6 class="text-left mt-4 mb-0">
+            <h6 class="text-left mt-4 mb-0"
+            data-laguange="active" 
+            data-es='AÑO 2022'
+            data-en='YEAR 2022'>
               AÑO 2022
             </h6>
-            <h6 class="text-left mt-1 accent-color font-20px">
+            <h6 class="text-left mt-1 accent-color font-20px"
+            data-laguange="active" 
+            data-es='FRESADORA DE TORRETA VERTICAL'
+            data-en='VERTICAL TURRET MILLING MACHINE'>
               FRESADORA DE TORRETA VERTICAL
             </h6>
 
             <table class="table table-borderless w-100 mt-3">
               <tbody>
                 <tr>
-                  <td class="px-0 py-0">
+                  <td class="px-0 py-0"
+                  data-laguange="active" 
+                  data-es='MESA DE TRABAJO'
+                  data-en='WORK TABLE'>
                     MESA DE TRABAJO
                   </td>
                   <td class="px-0 py-0 text-end">
@@ -414,7 +516,12 @@
 
             <div class="mt-5 mb-4 text-center">
               <a class="hero-btn px-5 py-3" data-bs-toggle="modal" data-bs-target="#FRESADORA-DE-TORRETA-VERTICAL">
-                <span class="position-relative">Detalles</span>
+                <span class="position-relative"
+                  data-laguange="active" 
+                  data-es='Detalles'
+                  data-en='Details'>
+                  Detalles
+                </span>
               </a>
             </div>
           </div>
@@ -428,17 +535,26 @@
                 <i class="icofont-plus"></i>
               </a>
             </div>
-            <h6 class="text-left mt-4 mb-0">
+            <h6 class="text-left mt-4 mb-0"
+            data-laguange="active" 
+            data-es='AÑO 2023'
+            data-en='YEAR 2023'>
               AÑO 2023
             </h6>
-            <h6 class="text-left mt-1 accent-color font-20px">
+            <h6 class="text-left mt-1 accent-color font-20px"
+            data-laguange="active" 
+            data-es='RECTIFICADORA PLANA'
+            data-en='RECTIFIC PLAN'>
               RECTIFICADORA PLANA
             </h6>
 
             <table class="table table-borderless w-100 mt-3">
               <tbody>
                 <tr>
-                  <td class="px-0 py-0">
+                  <td class="px-0 py-0"
+                  data-laguange="active" 
+                  data-es='MESA DE TRABAJO'
+                  data-en='WORK TABLE'>
                     MESA DE TRABAJO
                   </td>
                   <td class="px-0 py-0 text-end">
@@ -446,7 +562,10 @@
                   </td>
                 </tr>
                 <tr>
-                  <td class="px-0 py-0">
+                  <td class="px-0 py-0"
+                  data-laguange="active" 
+                  data-es='MAXIMA PIEZA DE TRABAJO A RECTIFICAR'
+                  data-en='MAXIMUM WORK PIECE TO BE GRINDED'>
                     MAXIMA PIEZA DE TRABAJO A RECTIFICAR
                   </td>
                   <td class="px-0 py-0 text-end">
@@ -458,7 +577,12 @@
 
             <div class="mt-5 mb-4 text-center">
               <a class="hero-btn px-5 py-3" data-bs-toggle="modal" data-bs-target="#RECTIFICADORA-PLANA">
-                <span class="position-relative">Detalles</span>
+                <span class="position-relative"
+                  data-laguange="active" 
+                  data-es='Detalles'
+                  data-en='Details'>
+                  Detalles
+                </span>
               </a>
             </div>
           </div>
@@ -475,17 +599,26 @@
                 <i class="icofont-plus"></i>
               </a>
             </div>
-            <h6 class="text-left mt-4 mb-0">
+            <h6 class="text-left mt-4 mb-0"
+            data-laguange="active" 
+            data-es='AÑO 2021'
+            data-en='YEAR 2021'>
               AÑO 2021
             </h6>
-            <h6 class="text-left mt-1 accent-color font-20px">
+            <h6 class="text-left mt-1 accent-color font-20px"
+            data-laguange="active" 
+            data-es='CENTRO DE MAQUINADO VERTICAL VF-4'
+            data-en='VERTICAL MACHINING CENTER VF-4'>
               CENTRO DE MAQUINADO VERTICAL VF-4
             </h6>
 
             <table class="table table-borderless w-100 mt-3">
               <tbody>
                 <tr>
-                  <td class="px-0 py-0">
+                  <td class="px-0 py-0"
+                  data-laguange="active" 
+                  data-es='MESA DE TRABAJO'
+                  data-en='WORK TABLE'>
                     MESA DE TRABAJO
                   </td>
                   <td class="px-0 py-0 text-end">
@@ -493,7 +626,10 @@
                   </td>
                 </tr>
                 <tr>
-                  <td class="px-0 py-0">
+                  <td class="px-0 py-0"
+                  data-laguange="active" 
+                  data-es='CUBO DE TRABAJO'
+                  data-en='WORK CUBE'>
                     CUBO DE TRABAJO
                   </td>
                   <td class="px-0 py-0 text-end">
@@ -514,17 +650,26 @@
                 <i class="icofont-plus"></i>
               </a>
             </div>
-            <h6 class="text-left mt-4 mb-0">
+            <h6 class="text-left mt-4 mb-0"
+            data-laguange="active" 
+            data-es='AÑO 2023'
+            data-en='YEAR 2023'>
               AÑO 2023
             </h6>
-            <h6 class="text-left mt-1 accent-color font-20px">
+            <h6 class="text-left mt-1 accent-color font-20px"
+            data-laguange="active" 
+            data-es='CENTRO DE TORNEADO ST-15Y'
+            data-en='ST-15Y TURNING CENTER'>
               CENTRO DE TORNEADO ST-15Y
             </h6>
 
             <table class="table table-borderless w-100 mt-3">
               <tbody>
                 <tr>
-                  <td class="px-0 py-0">
+                  <td class="px-0 py-0"
+                  data-laguange="active" 
+                  data-es='DIAMETRO DE CORTE '
+                  data-en='CUTTING DIAMETER'>
                     DIAMETRO DE CORTE 
                   </td>
                   <td class="px-0 py-0 text-end">
@@ -532,7 +677,10 @@
                   </td>
                 </tr>
                 <tr>
-                  <td class="px-0 py-0">
+                  <td class="px-0 py-0"
+                  data-laguange="active" 
+                  data-es='LONGITUD DE CORTE '
+                  data-en='CUTTING LENGTH'>
                     LONGITUD DE CORTE 
                   </td>
                   <td class="px-0 py-0 text-end">
@@ -540,7 +688,10 @@
                   </td>
                 </tr>
                 <tr>
-                  <td class="px-0 py-0">
+                  <td class="px-0 py-0"
+                  data-laguange="active" 
+                  data-es='CHUCK'
+                  data-en='CHUCK'>
                     CHUCK
                   </td>
                   <td class="px-0 py-0 text-end">
@@ -548,7 +699,10 @@
                   </td>
                 </tr>
                 <tr>
-                  <td class="px-0 py-0">
+                  <td class="px-0 py-0"
+                  data-laguange="active" 
+                  data-es='TORRETA'
+                  data-en='TURRET'>
                     TORRETA
                   </td>
                   <td class="px-0 py-0 text-end">
@@ -570,7 +724,12 @@
     <div class="container mt-5">
       <div class="row">
         <div class="col-12 mb-5">
-          <h1 class="text-center uppercase">Mallas de Alambre</h1>
+          <h1 class="text-center uppercase"
+            data-laguange="active" 
+            data-es='Mallas de Alambre'
+            data-en='Wire Meshes'>
+            Mallas de Alambre
+          </h1>
         </div>
       </div>
 
@@ -583,25 +742,40 @@
                 <i class="icofont-plus"></i>
               </a>
             </div>
-            <h6 class="text-left mt-4 mb-0">
+            <h6 class="text-left mt-4 mb-0"
+            data-laguange="active" 
+            data-es='AÑO 2023'
+            data-en='YEAR 2023'>
               AÑO 2023
             </h6>
-            <h6 class="text-left mt-1 accent-color font-20px">
+            <h6 class="text-left mt-1 accent-color font-20px"
+            data-laguange="active" 
+            data-es='EDEREZADORA Y CORTADORA DE ALAMBRE'
+            data-en='WIRE STRAIGHTER AND CUTTER'>
               EDEREZADORA Y CORTADORA DE ALAMBRE
             </h6>
 
             <table class="table table-borderless w-100 mt-3">
               <tbody>
                 <tr>
-                  <td class="px-0 py-0">
+                  <td class="px-0 py-0"
+                  data-laguange="active" 
+                  data-es='ESPESOR'
+                  data-en='THICKNESS'>
                     ESPESOR
                   </td>
-                  <td class="px-0 py-0 text-end">
+                  <td class="px-0 py-0 text-end"
+                  data-laguange="active" 
+                  data-es='2-6 MM'
+                  data-en='2-6MM'>
                     2-6 MM
                   </td>
                 </tr>
                 <tr>
-                  <td class="px-0 py-0">
+                  <td class="px-0 py-0"
+                  data-laguange="active" 
+                  data-es='LONGITUD'
+                  data-en='LENGTH'>
                     LONGITUD
                   </td>
                   <td class="px-0 py-0 text-end">
@@ -609,7 +783,10 @@
                   </td>
                 </tr>
                 <tr>
-                  <td class="px-0 py-0">
+                  <td class="px-0 py-0"
+                  data-laguange="active" 
+                  data-es='PIEZAS POR MINUTO'
+                  data-en='PIECES PER MINUTE'>
                     PIEZAS POR MINUTO
                   </td>
                   <td class="px-0 py-0 text-end">
@@ -621,7 +798,12 @@
 
             <div class="mt-5 mb-4 text-center">
               <a class="hero-btn px-5 py-3" data-bs-toggle="modal" data-bs-target="#EDEREZADORA-Y-CORTADORA-DE-ALAMBRE">
-                <span class="position-relative">Detalles</span>
+                <span class="position-relative"
+                  data-laguange="active" 
+                  data-es='Detalles'
+                  data-en='Details'>
+                  Detalles
+              </span>
               </a>
             </div>
           </div>
@@ -635,17 +817,26 @@
                 <i class="icofont-plus"></i>
               </a>
             </div>
-            <h6 class="text-left mt-4 mb-0">
+            <h6 class="text-left mt-4 mb-0"
+            data-laguange="active" 
+            data-es='AÑO 2023'
+            data-en='YEAR 2023'>
               AÑO 2023
             </h6>
-            <h6 class="text-left mt-1 accent-color font-20px">
+            <h6 class="text-left mt-1 accent-color font-20px"
+            data-laguange="active" 
+            data-es='DOBLADORA DE ALAMBRE'
+            data-en='WIRE BENDER'>
               DOBLADORA DE ALAMBRE
             </h6>
 
             <table class="table table-borderless w-100 mt-3">
               <tbody>
                 <tr>
-                  <td class="px-0 py-0">
+                  <td class="px-0 py-0"
+                  data-laguange="active" 
+                  data-es='ESPESOR'
+                  data-en='THICKNESS'>
                     ESPESOR
                   </td>
                   <td class="px-0 py-0 text-end">
@@ -653,7 +844,10 @@
                   </td>
                 </tr>
                 <tr>
-                  <td class="px-0 py-0">
+                  <td class="px-0 py-0"
+                  data-laguange="active" 
+                  data-es='PIEZAS POR MINUTO'
+                  data-en='PIECES PER MINUTE'>
                     PIEZAS POR MINUTO
                   </td>
                   <td class="px-0 py-0 text-end">
@@ -665,7 +859,12 @@
 
             <div class="mt-5 mb-4 text-center">
               <a class="hero-btn px-5 py-3" data-bs-toggle="modal" data-bs-target="#DOBLADORA-DE-ALAMBRE">
-                <span class="position-relative">Detalles</span>
+                <span class="position-relative"
+                  data-laguange="active" 
+                  data-es='Detalles'
+                  data-en='Details'>
+                  Detalles
+                </span>
               </a>
             </div>
           </div>
@@ -679,17 +878,26 @@
                 <i class="icofont-plus"></i>
               </a>
             </div>
-            <h6 class="text-left mt-4 mb-0">
+            <h6 class="text-left mt-4 mb-0"
+            data-laguange="active" 
+            data-es='AÑO 2023'
+            data-en='YEAR 2023'>
               AÑO 2023
             </h6>
-            <h6 class="text-left mt-1 accent-color font-20px">
+            <h6 class="text-left mt-1 accent-color font-20px"
+            data-laguange="active" 
+            data-es='SOLDADURA DE MALLA'
+            data-en='MESH WELDING'>
               SOLDADURA DE MALLA
             </h6>
 
             <table class="table table-borderless w-100 mt-3">
               <tbody>
                 <tr>
-                  <td class="px-0 py-0">
+                  <td class="px-0 py-0"
+                  data-laguange="active" 
+                  data-es='MESA DE TRABAJO'
+                  data-en='WORK TABLE'>
                     MESA DE TRABAJO
                   </td>
                   <td class="px-0 py-0 text-end">
@@ -701,7 +909,12 @@
 
             <div class="mt-5 mb-4 text-center">
               <a class="hero-btn px-5 py-3" data-bs-toggle="modal" data-bs-target="#SOLDADURA-DE-MALLA">
-                <span class="position-relative">Detalles</span>
+                <span class="position-relative"
+                  data-laguange="active" 
+                  data-es='Detalles'
+                  data-en='Details'>
+                  Detalles
+                </span>
               </a>
             </div>
           </div>
@@ -715,7 +928,12 @@
     <div class="container mt-5">
       <div class="row">
         <div class="col-12 mb-5">
-          <h1 class="text-center uppercase">Soldadura</h1>
+          <h1 class="text-center uppercase"
+            data-laguange="active" 
+            data-es='Soldadura'
+            data-en='Welding'>
+            Soldadura
+          </h1>
         </div>
       </div>
 
@@ -733,13 +951,21 @@
                 <h6 class="text-left mt-4 mb-0">
                    
                 </h6>
-                <h6 class="text-left mt-1 accent-color font-20px">
+                <h6 class="text-left mt-1 accent-color font-20px"
+                data-laguange="active" 
+                data-es='SOLDADURA Y LIMPIEZA DE OXIDO CON LASER 2 KW'
+                data-en='WELDING AND OXIDE CLEANING WITH LASER 2 KW'>
                   SOLDADURA Y LIMPIEZA DE OXIDO CON LASER 2 KW
                 </h6>
 
                 <div class="mt-5 mb-4 text-center">
                   <a class="hero-btn px-5 py-3" data-bs-toggle="modal" data-bs-target="#SOLDADURA-Y-LIMPIEZA-DE-OXIDO-CON-LASER-2-KW">
-                    <span class="position-relative">Detalles</span>
+                    <span class="position-relative"
+                      data-laguange="active" 
+                      data-es='Detalles'
+                      data-en='Details'>
+                      Detalles
+                    </span>
                   </a>
                 </div>
               </div>
@@ -761,10 +987,16 @@
                 <i class="icofont-plus"></i>
               </a>
             </div>
-            <h6 class="text-left mt-4 mb-0">
+            <h6 class="text-left mt-4 mb-0"
+            data-laguange="active" 
+            data-es='AÑO 2022'
+            data-en='YEAR 2022'>
               AÑO 2022
             </h6>
-            <h6 class="text-left mt-1 accent-color font-20px">
+            <h6 class="text-left mt-1 accent-color font-20px"
+            data-laguange="active" 
+            data-es='SOLDADURA INVERSOR PARA MICROALAMBRE, ELECTRODO Y TIG'
+            data-en='INVERTER WELDING FOR MICROWIRE, ELECTRODE AND TIG'>
               SOLDADURA INVERSOR PARA MICROALAMBRE, ELECTRODO Y TIG
             </h6>
           </div>
@@ -778,10 +1010,16 @@
                 <i class="icofont-plus"></i>
               </a>
             </div>
-            <h6 class="text-left mt-4 mb-0">
+            <h6 class="text-left mt-4 mb-0"
+            data-laguange="active" 
+            data-es='AÑO 2023'
+            data-en='YEAR 2023'>
               AÑO 2023
             </h6>
-            <h6 class="text-left mt-1 accent-color font-20px">
+            <h6 class="text-left mt-1 accent-color font-20px"
+            data-laguange="active" 
+            data-es='PLASMA BI-VOLTAJE'
+            data-en='BI-VOLTAGE PLASMA'>
               PLASMA BI-VOLTAJE
             </h6>
           </div>
@@ -797,11 +1035,12 @@
     <div class="container">
       <div class="row">
         <div class="col-lg-8 col-12">
-          © Copyright 2024 <span class="uppercase"> <span class="font-weight-bold">FI<span class="accent-color">MA</span>C Co<span class="accent-color">ah</span>uila SA de CV</span></span>. Todos los derechos reservados
+          © Copyright <span id="current_year"></span> <span class="uppercase"> <span class="font-weight-bold">FI<span class="accent-color">MA</span>C Co<span class="accent-color">ah</span>uila SA de CV</span></span>. 
+          <span data-laguange="active" data-es='Todos los derechos reservados ' data-en='All rights reserved'></span> 
         </div>
   
          <div class="col-lg-4 col-12 text-lg-end text-start mt-lg-0 mt-3">
-          Diseñado por <a href="http://ldp.mx" target="_blank" rel="noopener noreferrer" class="accent-color">LDP</a> 
+          <span data-laguange="active" data-es='Diseñado por ' data-en='Designed by '></span><a href="http://ldp.mx" target="_blank" rel="noopener noreferrer" class="accent-color">LDP</a> 
         </div>
       </div>
       
@@ -823,6 +1062,7 @@
 
   <!-- Template Main JS File -->
    <script src="assets/js/main.js"></script>
+   <script src="assets/js/language.js"></script>
 
 </body>
 
