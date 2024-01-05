@@ -9,9 +9,9 @@ setLanguage(language)
 function setLanguage(thisLanguage){
   let language_button = document.getElementsByClassName("language-button")
   for(let i = 0; i < language_button.length; i++){
-    language_button[i].classList.remove("accent-color-important")
+    language_button[i].classList.remove("active")
   }
-  document.getElementById("language-button-" + thisLanguage).classList.add("accent-color-important")
+  document.getElementById("language-button-" + thisLanguage).classList.add("active")
 
   language = thisLanguage
   window.localStorage.setItem("language", thisLanguage)

@@ -1894,12 +1894,12 @@ ul.manufacture-list li{
 }
 
 .index-fibra-vidrio-title{
-  margin-top: 77px;
+  margin-top: 65px;
 }
 
 @media (max-width: 1200px) {
   .index-fibra-vidrio-title{
-    margin-top: 64px;
+    margin-top: 56px;
   }
 }
 
@@ -1920,6 +1920,16 @@ ul.manufacture-list li{
 
 .language-button{
   color: black;
+  position: relative;
+}
+
+.language-button.active::before{
+  position: absolute;
+  content: "";
+  width: 20px;
+  height: 2px;
+  background-color: black;
+  bottom: -4px;
 }
 
 @media (max-width: 992px) {
@@ -1938,4 +1948,13 @@ ul.manufacture-list li{
 
 .min-height-100{
   min-height: 100px;
+}
+
+.img-flag{
+  width: 20px;
+  height: auto;
+}
+
+.padding-top-2px{
+  padding-top: 2px;
 }
