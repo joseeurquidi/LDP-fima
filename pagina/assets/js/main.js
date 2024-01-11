@@ -14,6 +14,11 @@ addEventListener("resize", (event) => {
   }
 });
 
+document.addEventListener('scroll', function(e){
+  let header = document.getElementById("header")
+  window.scrollY > 100 ? header.classList.add('myScrolled') : header.classList.remove('myScrolled');
+});
+
 /**
  * Easy selector helper function
  */

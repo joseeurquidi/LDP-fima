@@ -185,8 +185,9 @@ h4.style{
 
 .header-top{
   display: flex;
-  justify-content: start;
+  justify-content: end;
   gap: 10px;
+  padding-right: 50px;
 }
 
 .header-top a{
@@ -213,6 +214,7 @@ h4.style{
 
 .page-header .logo{
   height: 180px;
+  transition: all 0.3s ease-in-out;
 }
 
 .container-logo{
@@ -221,6 +223,7 @@ h4.style{
   position: absolute;
   background-color: #ffffff;
   padding: 20px;
+  transition: all 0.3s ease-in-out;
   /* box-shadow: 0 3px 10px rgba(0,0,0,.45); */
 }
 
@@ -239,9 +242,24 @@ h4.style{
   margin-bottom: 24px;
 }
 
+@media (max-width: 1400px) {
+  .header-top{
+    padding-right: 70px;
+  }
+}
+
 @media (max-width: 1200px) {
   .page-header .container-links{
     gap: 20px;
+  }
+
+  .header-top{
+    padding-right: 50px;
+    gap: 5px;
+  }
+
+  .header-top a:not(:first-child)::before{
+    padding-right: 5px;
   }
 }
 
@@ -355,6 +373,20 @@ h4.style{
   left: 0px;
 }
 
+.page-header.myScrolled .container-logo .logo{
+  height: 70px;
+}
+
+.page-header.myScrolled .container-logo .title{
+  display: none;
+}
+
+.page-header.myScrolled .container-logo {
+  padding: 10px;
+  /* position: relative; */
+
+}
+
 .logo-container{
   position: relative;
 }
@@ -390,6 +422,7 @@ h4.style{
     gap: 12px;
     align-items: start;
     justify-content: start;
+    padding-left: 0px;
   }
 
   .page-header .header-main-container .header-top a:not(:first-child)::before{
@@ -1912,7 +1945,7 @@ ul.manufacture-list li{
 
 .language-selector{
   display: flex;
-  justify-content: center;
+  justify-content: end;
   align-items: center;
   gap: 10px;
   font-size: 12px;
@@ -1935,6 +1968,10 @@ ul.manufacture-list li{
 @media (max-width: 992px) {
   .language-selector{
     justify-content: start;
+    padding-left: 0px;
+    color: white;
+    margin-bottom: 15px;
+    margin-top: 16px !important;
   }
 
   .language-button{
