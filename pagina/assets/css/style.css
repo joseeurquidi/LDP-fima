@@ -213,14 +213,20 @@ h4.style{
 }
 
 .page-header .logo{
-  height: 180px;
+  height: 200px;
   transition: all 0.3s ease-in-out;
+}
+
+@media (max-width: 1200px) {
+  .page-header .logo{
+    height: 150px;
+  }
 }
 
 .container-logo{
   top: 0px;
   left: 0px;
-  position: absolute;
+  position: fixed;
   background-color: #ffffff;
   padding: 20px;
   transition: all 0.3s ease-in-out;
